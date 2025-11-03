@@ -1,0 +1,38 @@
+<!-- Contact Form 템플릿 -->
+<form class="contact-form" id="contactForm">
+  <div class="mb-3">
+    <label for="contactName" class="form-label">이름 <span class="text-danger">*</span></label>
+    <input type="text" class="form-control" id="contactName" name="name" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="contactEmail" class="form-label">이메일 <span class="text-danger">*</span></label>
+    <input type="email" class="form-control" id="contactEmail" name="email" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="contactPhone" class="form-label">전화번호</label>
+    <input type="tel" class="form-control" id="contactPhone" name="phone">
+  </div>
+
+  <div class="mb-3">
+    <label for="contactSubject" class="form-label">제목 <span class="text-danger">*</span></label>
+    <input type="text" class="form-control" id="contactSubject" name="subject" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="contactMessage" class="form-label">메시지 <span class="text-danger">*</span></label>
+    <textarea class="form-control" id="contactMessage" name="message" rows="5" required></textarea>
+  </div>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="contactAgree" required>
+    <label class="form-check-label" for="contactAgree">
+      개인정보 수집 및 이용에 동의합니다. <span class="text-danger">*</span>
+    </label>
+  </div>
+
+  <div class="d-grid gap-2">
+    <button type="submit" class="btn btn-primary">전송하기</button>
+  </div>
+</form>

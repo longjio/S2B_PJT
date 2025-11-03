@@ -1,0 +1,161 @@
+// ============================================
+// 🛠️ Mixins
+// ============================================
+// 재사용 가능한 믹스인 모음
+
+// --------------------------------------------
+// 🔹 반응형 미디어 쿼리
+// --------------------------------------------
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: 575.98px) { @content; }
+  } @else if $breakpoint == sm {
+    @media (min-width: 576px) { @content; }
+  } @else if $breakpoint == md {
+    @media (min-width: 768px) { @content; }
+  } @else if $breakpoint == lg {
+    @media (min-width: 992px) { @content; }
+  } @else if $breakpoint == xl {
+    @media (min-width: 1200px) { @content; }
+  } @else if $breakpoint == xxl {
+    @media (min-width: 1400px) { @content; }
+  }
+}
+
+// --------------------------------------------
+// 🔹 Flexbox 중앙 정렬
+// --------------------------------------------
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// --------------------------------------------
+// 🔹 위치 관련
+// --------------------------------------------
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absolute-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// --------------------------------------------
+// 🔹 텍스트 말줄임
+// --------------------------------------------
+@mixin text-ellipsis($lines: 1) {
+  @if $lines == 1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+// --------------------------------------------
+// 🔹 스크롤바 스타일링
+// --------------------------------------------
+@mixin custom-scrollbar($width: 8px, $track-color: #f1f1f1, $thumb-color: #888) {
+  &::-webkit-scrollbar {
+    width: $width;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $track-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $thumb-color;
+    border-radius: $width / 2;
+
+    &:hover {
+      background: darken($thumb-color, 10%);
+    }
+  }
+}
+
+// --------------------------------------------
+// 🔹 그림자 효과
+// --------------------------------------------
+@mixin card-shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// --------------------------------------------
+// 🔹 버튼 기본 스타일
+// --------------------------------------------
+@mixin button-base {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: $transition-base;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+// --------------------------------------------
+// 🔹 배경 그라디언트
+// --------------------------------------------
+@mixin gradient-bg($start-color, $end-color, $direction: to right) {
+  background: linear-gradient($direction, $start-color, $end-color);
+}
+
+// --------------------------------------------
+// 🔹 애니메이션 페이드인
+// --------------------------------------------
+@mixin fade-in($duration: 0.3s, $delay: 0s) {
+  animation: fadeIn $duration ease-in-out $delay forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

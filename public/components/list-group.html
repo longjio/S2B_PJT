@@ -1,0 +1,148 @@
+<h2 class="showcase__section-title">List Group</h2>
+              <p class="showcase__section-description">
+                콘텐츠를 목록 형태로 표시하는 유연한 컴포넌트입니다.
+              </p>
+
+              <!-- Basic List Group -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic List Group</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <ul class="list-group">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                  </ul>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="list-group-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="list-group-basic">&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item"&gt;An item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;A second item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;A third item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;A fourth item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;And a fifth one&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Active Items -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Active and Disabled Items</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <ul class="list-group">
+                    <li class="list-group-item active" aria-current="true">An active item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+                  </ul>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="list-group-active">Copy Code</button>
+                  </div>
+                  <pre><code id="list-group-active">&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item active"&gt;An active item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;A second item&lt;/li&gt;
+  &lt;li class="list-group-item disabled"&gt;A disabled item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Flush List Group -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Flush List Group</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                  </ul>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="list-group-flush">Copy Code</button>
+                  </div>
+                  <pre><code id="list-group-flush">&lt;ul class="list-group list-group-flush"&gt;
+  &lt;li class="list-group-item"&gt;An item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;A second item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;A third item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Contextual Classes -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Contextual Classes</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <ul class="list-group">
+                    <li class="list-group-item">A simple default list group item</li>
+                    <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+                    <li class="list-group-item list-group-item-success">A simple success list group item</li>
+                    <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+                    <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+                    <li class="list-group-item list-group-item-info">A simple info list group item</li>
+                  </ul>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="list-group-contextual">Copy Code</button>
+                  </div>
+                  <pre><code id="list-group-contextual">&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item"&gt;A simple default list group item&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-primary"&gt;A simple primary list group item&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-success"&gt;A simple success list group item&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-danger"&gt;A simple danger list group item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- With Badges -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>With Badges</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A list item
+                      <span class="badge bg-primary rounded-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A second list item
+                      <span class="badge bg-primary rounded-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A third list item
+                      <span class="badge bg-primary rounded-pill">1</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="list-group-badges">Copy Code</button>
+                  </div>
+                  <pre><code id="list-group-badges">&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+    A list item
+    &lt;span class="badge bg-primary rounded-pill"&gt;14&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+    A second list item
+    &lt;span class="badge bg-primary rounded-pill"&gt;2&lt;/span&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </div>

@@ -1,0 +1,93 @@
+// ============================================
+// 🎯 Container Layout
+// ============================================
+// 컨테이너 레이아웃 스타일
+
+// 페이지 전체 래퍼
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// 메인 콘텐츠 영역
+.main-content {
+  flex: 1;
+  
+  &--full {
+    padding: 0;
+  }
+
+  &--narrow {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+// 섹션 래퍼
+.section {
+  padding: 4rem 0;
+
+  &--primary {
+    background-color: rgba($primary, 0.05);
+  }
+
+  &--dark {
+    background-color: #212529;
+    color: #fff;
+  }
+
+  &--light {
+    background-color: #f8f9fa;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: $font-weight-bold;
+    margin-bottom: 1rem;
+    color: inherit;
+  }
+
+  &__subtitle {
+    font-size: 1.125rem;
+    color: #6c757d;
+
+    .section--dark & {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}
+
+// 그리드 시스템 확장
+.grid {
+  display: grid;
+  gap: 1.5rem;
+
+  &--2 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  &--3 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  &--4 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+// 반응형 간격 조정
+.spacing {
+  &-top-sm { padding-top: 1rem; }
+  &-top-md { padding-top: 2rem; }
+  &-top-lg { padding-top: 4rem; }
+
+  &-bottom-sm { padding-bottom: 1rem; }
+  &-bottom-md { padding-bottom: 2rem; }
+  &-bottom-lg { padding-bottom: 4rem; }
+}

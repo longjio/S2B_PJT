@@ -1,0 +1,29 @@
+<!-- 기본 메인 레이아웃 템플릿 -->
+<div class="layout-main">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- 사이드바 (선택적) -->
+      <aside class="col-md-3 col-lg-2 d-md-block sidebar">
+        <div class="position-sticky pt-3">
+          <nav class="nav flex-column">
+            {{sidebar}}
+          </nav>
+        </div>
+      </aside>
+
+      <!-- 메인 컨텐츠 -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">{{pageTitle}}</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            {{toolbar}}
+          </div>
+        </div>
+
+        <div class="content">
+          {{content}}
+        </div>
+      </main>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,182 @@
+<h2 class="showcase__section-title">Accordion</h2>
+              <p class="showcase__section-description">
+                아코디언 컴포넌트를 사용하여 콘텐츠를 접었다 펼칠 수 있습니다.
+              </p>
+
+              <!-- Basic Accordion -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Accordion</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="accordion-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="accordion-basic">&lt;div class="accordion" id="accordionExample"&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;h2 class="accordion-header"&gt;
+      &lt;button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"&gt;
+        Accordion Item #1
+      &lt;/button&gt;
+    &lt;/h2&gt;
+    &lt;div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample"&gt;
+      &lt;div class="accordion-body"&gt;
+        Content for first item
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;h2 class="accordion-header"&gt;
+      &lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"&gt;
+        Accordion Item #2
+      &lt;/button&gt;
+    &lt;/h2&gt;
+    &lt;div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample"&gt;
+      &lt;div class="accordion-body"&gt;
+        Content for second item
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Flush Accordion -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Flush Accordion</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Flush Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">테두리 없는 플러시 스타일의 아코디언입니다.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Flush Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">두 번째 플러시 아코디언 항목의 내용입니다.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="accordion-flush">Copy Code</button>
+                  </div>
+                  <pre><code id="accordion-flush">&lt;div class="accordion accordion-flush" id="accordionFlushExample"&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;h2 class="accordion-header"&gt;
+      &lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"&gt;
+        Flush Accordion Item #1
+      &lt;/button&gt;
+    &lt;/h2&gt;
+    &lt;div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"&gt;
+      &lt;div class="accordion-body"&gt;Content&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Always Open Accordion -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Always Open Accordion</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                          이 아코디언은 다른 항목이 열려도 닫히지 않습니다.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          여러 항목을 동시에 열어둘 수 있습니다.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="accordion-always-open">Copy Code</button>
+                  </div>
+                  <pre><code id="accordion-always-open">&lt;div class="accordion" id="accordionPanelsStayOpenExample"&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;h2 class="accordion-header"&gt;
+      &lt;button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"&gt;
+        Accordion Item #1
+      &lt;/button&gt;
+    &lt;/h2&gt;
+    &lt;div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"&gt;
+      &lt;div class="accordion-body"&gt;Content&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>

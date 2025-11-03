@@ -1,0 +1,86 @@
+<h2 class="showcase__section-title">Collapse</h2>
+              <p class="showcase__section-description">
+                콘텐츠의 표시 여부를 토글하는 컴포넌트입니다.
+              </p>
+
+              <!-- Basic Collapse -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Collapse</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Toggle Collapse
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user clicks the button.
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="collapse-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="collapse-basic">&lt;button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"&gt;
+  Toggle Collapse
+&lt;/button&gt;
+&lt;div class="collapse" id="collapseExample"&gt;
+  &lt;div class="card card-body"&gt;
+    Content here...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Multiple Targets -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Multiple Targets</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <p>
+                    <button class="btn btn-primary me-2" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false">
+                      Toggle first element
+                    </button>
+                    <button class="btn btn-primary me-2" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false">
+                      Toggle second element
+                    </button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false">
+                      Toggle both elements
+                    </button>
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                          First collapse content
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                          Second collapse content
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="collapse-multiple">Copy Code</button>
+                  </div>
+                  <pre><code id="collapse-multiple">&lt;button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".multi-collapse"&gt;
+  Toggle both
+&lt;/button&gt;
+&lt;div class="collapse multi-collapse" id="multiCollapseExample1"&gt;
+  &lt;div class="card card-body"&gt;First content&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapse multi-collapse" id="multiCollapseExample2"&gt;
+  &lt;div class="card card-body"&gt;Second content&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>

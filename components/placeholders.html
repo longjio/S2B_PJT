@@ -1,0 +1,187 @@
+<h2 class="showcase__section-title">Placeholders</h2>
+              <p class="showcase__section-description">
+                로딩 중 콘텐츠를 표시하는 스켈레톤 로더입니다. HTML과 CSS만으로 구성되며, 사용자에게 로딩 상태를 시각적으로 표현합니다.
+              </p>
+
+              <!-- Card Placeholder Example -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Card with Placeholder</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="card">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='180'%3E%3Crect width='100%25' height='100%25' fill='%23868e96'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='26px' fill='%23dee2e6'%3EImage%3C/text%3E%3C/svg%3E" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card" aria-hidden="true">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='180'%3E%3Crect width='100%25' height='100%25' fill='%23868e96'/%3E%3C/svg%3E" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6"></span>
+                          </h5>
+                          <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-6"></span>
+                            <span class="placeholder col-8"></span>
+                          </p>
+                          <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="placeholder-card">Copy Code</button>
+                  </div>
+                  <pre><code id="placeholder-card">&lt;div class="card" aria-hidden="true"&gt;
+  &lt;img src="..." class="card-img-top" alt="..."&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title placeholder-glow"&gt;
+      &lt;span class="placeholder col-6"&gt;&lt;/span&gt;
+    &lt;/h5&gt;
+    &lt;p class="card-text placeholder-glow"&gt;
+      &lt;span class="placeholder col-7"&gt;&lt;/span&gt;
+      &lt;span class="placeholder col-4"&gt;&lt;/span&gt;
+      &lt;span class="placeholder col-4"&gt;&lt;/span&gt;
+      &lt;span class="placeholder col-6"&gt;&lt;/span&gt;
+      &lt;span class="placeholder col-8"&gt;&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Width Control -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Width Control</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <span class="placeholder col-6"></span>
+                  <span class="placeholder w-75"></span>
+                  <span class="placeholder" style="width: 25%;"></span>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="placeholder-width">Copy Code</button>
+                  </div>
+                  <pre><code id="placeholder-width">&lt;!-- Grid column class --&gt;
+&lt;span class="placeholder col-6"&gt;&lt;/span&gt;
+
+&lt;!-- Width utility --&gt;
+&lt;span class="placeholder w-75"&gt;&lt;/span&gt;
+
+&lt;!-- Inline style --&gt;
+&lt;span class="placeholder" style="width: 25%;"&gt;&lt;/span&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Color Variations -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Color Variations</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="d-flex flex-column gap-2">
+                    <span class="placeholder col-12"></span>
+                    <span class="placeholder col-12 bg-primary"></span>
+                    <span class="placeholder col-12 bg-secondary"></span>
+                    <span class="placeholder col-12 bg-success"></span>
+                    <span class="placeholder col-12 bg-danger"></span>
+                    <span class="placeholder col-12 bg-warning"></span>
+                    <span class="placeholder col-12 bg-info"></span>
+                    <span class="placeholder col-12 bg-light"></span>
+                    <span class="placeholder col-12 bg-dark"></span>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="placeholder-color">Copy Code</button>
+                  </div>
+                  <pre><code id="placeholder-color">&lt;span class="placeholder col-12"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-primary"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-secondary"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-success"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-danger"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-warning"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-info"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-light"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-dark"&gt;&lt;/span&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Sizing -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Sizing</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="d-flex flex-column gap-2">
+                    <span class="placeholder col-12 placeholder-lg"></span>
+                    <span class="placeholder col-12"></span>
+                    <span class="placeholder col-12 placeholder-sm"></span>
+                    <span class="placeholder col-12 placeholder-xs"></span>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="placeholder-sizing">Copy Code</button>
+                  </div>
+                  <pre><code id="placeholder-sizing">&lt;span class="placeholder col-12 placeholder-lg"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 placeholder-sm"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 placeholder-xs"&gt;&lt;/span&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Animation: Glow -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Animation - Glow</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <p class="placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                  </p>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="placeholder-glow">Copy Code</button>
+                  </div>
+                  <pre><code id="placeholder-glow">&lt;p class="placeholder-glow"&gt;
+  &lt;span class="placeholder col-12"&gt;&lt;/span&gt;
+&lt;/p&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Animation: Wave -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Animation - Wave</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <p class="placeholder-wave">
+                    <span class="placeholder col-12"></span>
+                  </p>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="placeholder-wave">Copy Code</button>
+                  </div>
+                  <pre><code id="placeholder-wave">&lt;p class="placeholder-wave"&gt;
+  &lt;span class="placeholder col-12"&gt;&lt;/span&gt;
+&lt;/p&gt;</code></pre>
+                </div>
+              </div>

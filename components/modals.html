@@ -1,0 +1,167 @@
+<h2 class="showcase__section-title">Modals</h2>
+              <p class="showcase__section-description">
+                페이지 위에 오버레이되는 대화 상자입니다.
+              </p>
+
+              <!-- Basic Modal -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Modal</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Modal body text goes here.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="modal-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="modal-basic">&lt;!-- Button trigger --&gt;
+&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;
+  Launch demo modal
+&lt;/button&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class="modal fade" id="exampleModal" tabindex="-1"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h5 class="modal-title"&gt;Modal title&lt;/h5&gt;
+        &lt;button type="button" class="btn-close" data-bs-dismiss="modal"&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        Modal body text goes here.
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Modal Sizes -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Modal Sizes</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#modalSm">
+                    Small modal
+                  </button>
+                  <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#modalLg">
+                    Large modal
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalXl">
+                    Extra large modal
+                  </button>
+
+                  <div class="modal fade" id="modalSm" tabindex="-1">
+                    <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Small Modal</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">Small modal content</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="modalLg" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Large Modal</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">Large modal content</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="modalXl" tabindex="-1">
+                    <div class="modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Extra Large Modal</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">Extra large modal content</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="modal-sizes">Copy Code</button>
+                  </div>
+                  <pre><code id="modal-sizes">&lt;!-- Small modal --&gt;
+&lt;div class="modal-dialog modal-sm"&gt;...&lt;/div&gt;
+
+&lt;!-- Large modal --&gt;
+&lt;div class="modal-dialog modal-lg"&gt;...&lt;/div&gt;
+
+&lt;!-- Extra large modal --&gt;
+&lt;div class="modal-dialog modal-xl"&gt;...&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Centered Modal -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Vertically Centered Modal</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCentered">
+                    Centered modal
+                  </button>
+
+                  <div class="modal fade" id="modalCentered" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Centered Modal</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                          This modal is vertically centered.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="modal-centered">Copy Code</button>
+                  </div>
+                  <pre><code id="modal-centered">&lt;div class="modal-dialog modal-dialog-centered"&gt;
+  &lt;div class="modal-content"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>

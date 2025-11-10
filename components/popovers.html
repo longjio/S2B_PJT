@@ -1,0 +1,36 @@
+<h2 class="showcase__section-title">Popovers</h2>
+              <p class="showcase__section-description">
+                클릭 시 추가 정보를 표시하는 팝오버입니다.
+              </p>
+
+              <!-- Basic Popovers -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Popovers</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button type="button" class="btn btn-secondary me-2" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                    Click to toggle popover
+                  </button>
+                  <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                    Popover on top
+                  </button>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="popover-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="popover-basic">&lt;button type="button" class="btn btn-secondary"
+  data-bs-toggle="popover"
+  data-bs-title="Popover title"
+  data-bs-content="Popover content"&gt;
+  Click to toggle popover
+&lt;/button&gt;
+
+&lt;!-- Initialize with JavaScript --&gt;
+&lt;script&gt;
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(el =&gt; new bootstrap.Popover(el))
+&lt;/script&gt;</code></pre>
+                </div>
+              </div>

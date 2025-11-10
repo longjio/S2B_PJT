@@ -100,7 +100,6 @@ function initTabNavigation() {
           if (tabId === 'tooltips' || tabId === 'popovers') {
             initTooltipsAndPopovers();
           }
-<<<<<<< HEAD
 
           // Tabulator 초기화
           if (tabId === 'tabulator') {
@@ -115,8 +114,6 @@ function initTabNavigation() {
               initDatePickers();
             }, 100);
           }
-=======
->>>>>>> 3554941135704a3e229999e297ca3f79b80386a5
         } catch (error) {
           console.error(`Failed to load component ${tabId}:`, error);
         }
@@ -260,7 +257,6 @@ function initTabulatorTables() {
 }
 
 // ============================================
-<<<<<<< HEAD
 // DatePicker Initialization
 // ============================================
 async function initDatePickers() {
@@ -723,8 +719,6 @@ async function initDatePickers() {
 }
 
 // ============================================
-=======
->>>>>>> 3554941135704a3e229999e297ca3f79b80386a5
 // Tooltips & Popovers Initialization
 // ============================================
 function initTooltipsAndPopovers() {
@@ -814,13 +808,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initTooltipsAndPopovers();
   initScrollspyLinks();
 
-<<<<<<< HEAD
-=======
-  // Tabulator 초기화 (약간의 지연)
-  setTimeout(() => {
-    initTabulatorTables();
-  }, 100);
-
->>>>>>> 3554941135704a3e229999e297ca3f79b80386a5
   console.log('✅ Showcase 초기화 완료!');
 });

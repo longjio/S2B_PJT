@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h2 class="showcase__section-title">Tables</h2>
               <p class="showcase__section-description">
                 Bootstrap 기본 테이블과 Tabulator 라이브러리를 사용한 고급 테이블 예제
@@ -428,87 +427,5 @@
     &lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
-=======
-<h2 class="showcase__section-title">Tables (Tabulator)</h2>
-              <p class="showcase__section-description">
-                Tabulator 라이브러리를 사용한 고급 테이블 - 검색, 정렬, 페이지네이션 기능 제공 (Vanilla JS, jQuery 불필요!)
-              </p>
-
-              <!-- Basic Board Table -->
-              <div class="showcase__item">
-                <div class="showcase__item-header">
-                  <h4>게시판 스타일 테이블</h4>
-                </div>
-                <div class="showcase__item-preview">
-                  <div id="boardTable"></div>
-                </div>
-                <div class="showcase__item-code">
-                  <div class="showcase__item-actions">
-                    <button class="btn-copy" data-copy="table-basic">Copy Code</button>
-                  </div>
-                  <pre><code id="table-basic">&lt;!-- HTML --&gt;
-&lt;div id="boardTable"&gt;&lt;/div&gt;
-
-&lt;!-- JavaScript --&gt;
-&lt;script&gt;
-const boardData = [
-  { id: 15, title: 'Bootstrap Table 사용법', author: '관리자', date: '2025-01-15', views: 245 },
-  { id: 14, title: '공지사항입니다', author: '운영자', date: '2025-01-14', views: 189 },
-  // ... more data
-];
-
-new Tabulator("#boardTable", {
-  data: boardData,
-  layout: "fitColumns",
-  pagination: true,
-  paginationSize: 10,
-  paginationSizeSelector: [10, 20, 50],
-  columns: [
-    { title: "번호", field: "id", sorter: "number", width: 80 },
-    { title: "제목", field: "title", sorter: "string" },
-    { title: "작성자", field: "author", sorter: "string", width: 120 },
-    { title: "작성일", field: "date", sorter: "date", width: 120 },
-    { title: "조회", field: "views", sorter: "number", width: 80 }
-  ]
-});
-&lt;/script&gt;</code></pre>
-                </div>
-              </div>
-
-              <!-- Compact Table -->
-              <div class="showcase__item">
-                <div class="showcase__item-header">
-                  <h4>컴팩트 테이블</h4>
-                </div>
-                <div class="showcase__item-preview">
-                  <div id="compactTable"></div>
-                </div>
-                <div class="showcase__item-code">
-                  <div class="showcase__item-actions">
-                    <button class="btn-copy" data-copy="table-compact">Copy Code</button>
-                  </div>
-                  <pre><code id="table-compact">&lt;div id="compactTable"&gt;&lt;/div&gt;
-
-&lt;script&gt;
-const compactData = [
-  { no: 1, name: '홍길동', email: 'hong@example.com', status: '활성' },
-  { no: 2, name: '김철수', email: 'kim@example.com', status: '활성' },
-  // ... more data
-];
-
-new Tabulator("#compactTable", {
-  data: compactData,
-  layout: "fitColumns",
-  pagination: true,
-  paginationSize: 5,
-  columns: [
-    { title: "No", field: "no", sorter: "number", width: 80 },
-    { title: "이름", field: "name", sorter: "string", width: 120 },
-    { title: "이메일", field: "email", sorter: "string" },
-    { title: "상태", field: "status", sorter: "string", width: 100 }
-  ]
-});
-&lt;/script&gt;</code></pre>
->>>>>>> 3554941135704a3e229999e297ca3f79b80386a5
                 </div>
               </div>

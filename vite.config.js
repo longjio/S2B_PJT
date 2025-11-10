@@ -18,7 +18,12 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/index.html'),
+<<<<<<< HEAD
         guide: resolve(__dirname, 'src/guide.html'),
+=======
+        // 추가 페이지가 있다면 여기에 추가
+        // about: resolve(__dirname, 'src/about.html'),
+>>>>>>> 3554941135704a3e229999e297ca3f79b80386a5
       }
     }
   },

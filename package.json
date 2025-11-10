@@ -23,9 +23,13 @@
     "vite-plugin-html": "^3.2.2"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@eonasdan/tempus-dominus": "^6.10.4",
     "bootstrap": "5.3.8",
     "bootstrap-icons": "^1.13.1",
+=======
+    "bootstrap": "5.3.8",
+>>>>>>> 3554941135704a3e229999e297ca3f79b80386a5
     "tabulator-tables": "^6.3.1"
   }
 }

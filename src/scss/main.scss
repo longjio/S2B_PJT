@@ -15,11 +15,17 @@
 @import 'bootstrap/scss/bootstrap';
 
 // --------------------------------------------
+<<<<<<< HEAD
 // 2-1. External Libraries
 // --------------------------------------------
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 @import 'tabulator-tables/dist/css/tabulator.min.css';
 @import '@eonasdan/tempus-dominus/dist/css/tempus-dominus.min.css';
+=======
+// 2-1. Tabulator
+// --------------------------------------------
+@import 'tabulator-tables/dist/css/tabulator.min.css';
+>>>>>>> 3554941135704a3e229999e297ca3f79b80386a5
 
 // --------------------------------------------
 // 3. Base Styles (리셋, 타이포그래피, 유틸리티)
@@ -41,8 +47,11 @@
 // --------------------------------------------
 // 사용자가 추가한 컴포넌트 파일들을 여기에 임포트
 @import './components/tables';
+<<<<<<< HEAD
 @import './components/datepicker';
 @import './components/cards';  // 예시: 새로운 컴포넌트 추가
+=======
+>>>>>>> 3554941135704a3e229999e297ca3f79b80386a5
 
 // --------------------------------------------
 // 6. 프로젝트별 커스텀 스타일

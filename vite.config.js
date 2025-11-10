@@ -3,7 +3,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: 'src',
-  base: './',
+  base: '/S2B_PJT/',
   publicDir: '../public',
 
   server: {

@@ -1,0 +1,349 @@
+<h2 class="showcase__section-title">Carousel</h2>
+              <p class="showcase__section-description">
+                슬라이드쇼 형태의 이미지나 콘텐츠를 순환하여 보여주는 컴포넌트입니다.
+              </p>
+
+              <!-- Basic Carousel -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Carousel (Slides Only)</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div id="carouselBasic" class="carousel slide" style="max-width: 600px; margin: 0 auto;">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#7e00ff"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">First slide</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#198754"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Second slide</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#dc3545"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Third slide</text>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="carousel-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="carousel-basic">&lt;div id="carouselBasic" class="carousel slide"&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Carousel with Controls -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Carousel with Controls</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div id="carouselControls" class="carousel slide" style="max-width: 600px; margin: 0 auto;">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#7e00ff"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">First slide</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#198754"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Second slide</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#dc3545"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Third slide</text>
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="carousel-controls">Copy Code</button>
+                  </div>
+                  <pre><code id="carousel-controls">&lt;div id="carouselControls" class="carousel slide"&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev"&gt;
+    &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next"&gt;
+    &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Carousel with Indicators -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Carousel with Indicators</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div id="carouselIndicators" class="carousel slide" style="max-width: 600px; margin: 0 auto;">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#7e00ff"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">First slide</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#198754"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Second slide</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#dc3545"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Third slide</text>
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="carousel-indicators">Copy Code</button>
+                  </div>
+                  <pre><code id="carousel-indicators">&lt;div id="carouselIndicators" class="carousel slide"&gt;
+  &lt;div class="carousel-indicators"&gt;
+    &lt;button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"&gt;&lt;/button&gt;
+    &lt;button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"&gt;&lt;/button&gt;
+    &lt;button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev"&gt;
+    &lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next"&gt;
+    &lt;span class="carousel-control-next-icon"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Carousel with Captions -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Carousel with Captions</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel" style="max-width: 600px; margin: 0 auto;">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#7e00ff"></rect>
+                        </svg>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#198754"></rect>
+                        </svg>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#dc3545"></rect>
+                        </svg>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="carousel-captions">Copy Code</button>
+                  </div>
+                  <pre><code id="carousel-captions">&lt;div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel"&gt;
+  &lt;div class="carousel-indicators"&gt;
+    &lt;button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"&gt;&lt;/button&gt;
+    &lt;button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"&gt;&lt;/button&gt;
+    &lt;button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+      &lt;div class="carousel-caption d-none d-md-block"&gt;
+        &lt;h5&gt;First slide label&lt;/h5&gt;
+        &lt;p&gt;Some representative placeholder content for the first slide.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+      &lt;div class="carousel-caption d-none d-md-block"&gt;
+        &lt;h5&gt;Second slide label&lt;/h5&gt;
+        &lt;p&gt;Some representative placeholder content for the second slide.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev"&gt;
+    &lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next"&gt;
+    &lt;span class="carousel-control-next-icon"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Carousel with Fade Effect -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Carousel with Fade Effect</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 600px; margin: 0 auto;">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#7e00ff"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Fade 1</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#198754"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Fade 2</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#dc3545"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Fade 3</text>
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="carousel-fade">Copy Code</button>
+                  </div>
+                  <pre><code id="carousel-fade">&lt;div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel"&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev"&gt;
+    &lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next"&gt;
+    &lt;span class="carousel-control-next-icon"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>

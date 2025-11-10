@@ -1,0 +1,85 @@
+// ============================================
+// 🎯 Footer Layout
+// ============================================
+// 푸터 레이아웃 스타일
+
+.footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 3rem 0 1.5rem;
+  margin-top: auto;
+
+  &__container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__section {
+    &-title {
+      font-size: 1.125rem;
+      font-weight: $font-weight-bold;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    margin-bottom: 0.5rem;
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.875rem;
+  }
+
+  &__social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $primary;
+        transform: translateY(-3px);
+      }
+    }
+  }
+}

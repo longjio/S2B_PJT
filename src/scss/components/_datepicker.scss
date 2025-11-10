@@ -1,0 +1,35 @@
+// ============================================
+// 🗓️ DatePicker (Tempus Dominus) Customization
+// ============================================
+// Tempus Dominus 기본 스타일 유지 (커스터마이징 없음)
+
+// 통합 날짜 범위 선택기 컨테이너
+.date-range-picker-container {
+  background: #fff;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  .row {
+    margin: 0;
+  }
+
+  // 인라인 DatePicker 간격 조정
+  [class*="col-"] {
+    padding: 0 0.5rem;
+  }
+
+  // 통합 버튼 영역
+  .date-range-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--bs-border-color);
+
+    .btn {
+      min-width: 100px;
+    }
+  }
+}

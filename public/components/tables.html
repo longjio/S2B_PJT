@@ -1,0 +1,431 @@
+<h2 class="showcase__section-title">Tables</h2>
+              <p class="showcase__section-description">
+                Bootstrap 기본 테이블과 Tabulator 라이브러리를 사용한 고급 테이블 예제
+              </p>
+
+              <!-- ========================================
+                   BOOTSTRAP NATIVE TABLES
+              ========================================= -->
+              <h3 class="mt-5 mb-4">Bootstrap 기본 테이블</h3>
+              <p class="text-muted mb-4">정적 데이터 표시에 적합한 Bootstrap 네이티브 테이블 (JavaScript 불필요)</p>
+
+              <!-- Basic Bootstrap Table -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>기본 테이블</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">이름</th>
+                          <th scope="col">이메일</th>
+                          <th scope="col">역할</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>홍길동</td>
+                          <td>hong@example.com</td>
+                          <td>관리자</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>김철수</td>
+                          <td>kim@example.com</td>
+                          <td>사용자</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>이영희</td>
+                          <td>lee@example.com</td>
+                          <td>사용자</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="table-bootstrap-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="table-bootstrap-basic">&lt;div class="table-responsive"&gt;
+  &lt;table class="table"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th scope="col"&gt;#&lt;/th&gt;
+        &lt;th scope="col"&gt;이름&lt;/th&gt;
+        &lt;th scope="col"&gt;이메일&lt;/th&gt;
+        &lt;th scope="col"&gt;역할&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope="row"&gt;1&lt;/th&gt;
+        &lt;td&gt;홍길동&lt;/td&gt;
+        &lt;td&gt;hong@example.com&lt;/td&gt;
+        &lt;td&gt;관리자&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope="row"&gt;2&lt;/th&gt;
+        &lt;td&gt;김철수&lt;/td&gt;
+        &lt;td&gt;kim@example.com&lt;/td&gt;
+        &lt;td&gt;사용자&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope="row"&gt;3&lt;/th&gt;
+        &lt;td&gt;이영희&lt;/td&gt;
+        &lt;td&gt;lee@example.com&lt;/td&gt;
+        &lt;td&gt;사용자&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Striped Table -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>줄무늬 테이블 (Striped)</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">번호</th>
+                          <th scope="col">제목</th>
+                          <th scope="col">작성자</th>
+                          <th scope="col">작성일</th>
+                          <th scope="col">조회</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>15</td>
+                          <td>Bootstrap Table 사용법</td>
+                          <td>관리자</td>
+                          <td>2025-01-15</td>
+                          <td>245</td>
+                        </tr>
+                        <tr>
+                          <td>14</td>
+                          <td>공지사항입니다</td>
+                          <td>운영자</td>
+                          <td>2025-01-14</td>
+                          <td>189</td>
+                        </tr>
+                        <tr>
+                          <td>13</td>
+                          <td>Vite 개발 환경 설정</td>
+                          <td>개발자</td>
+                          <td>2025-01-13</td>
+                          <td>156</td>
+                        </tr>
+                        <tr>
+                          <td>12</td>
+                          <td>SCSS 커스터마이징 팁</td>
+                          <td>디자이너</td>
+                          <td>2025-01-12</td>
+                          <td>134</td>
+                        </tr>
+                        <tr>
+                          <td>11</td>
+                          <td>컴포넌트 쇼케이스 업데이트</td>
+                          <td>관리자</td>
+                          <td>2025-01-11</td>
+                          <td>98</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="table-bootstrap-striped">Copy Code</button>
+                  </div>
+                  <pre><code id="table-bootstrap-striped">&lt;div class="table-responsive"&gt;
+  &lt;table class="table table-striped"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th scope="col"&gt;번호&lt;/th&gt;
+        &lt;th scope="col"&gt;제목&lt;/th&gt;
+        &lt;th scope="col"&gt;작성자&lt;/th&gt;
+        &lt;th scope="col"&gt;작성일&lt;/th&gt;
+        &lt;th scope="col"&gt;조회&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;15&lt;/td&gt;
+        &lt;td&gt;Bootstrap Table 사용법&lt;/td&gt;
+        &lt;td&gt;관리자&lt;/td&gt;
+        &lt;td&gt;2025-01-15&lt;/td&gt;
+        &lt;td&gt;245&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;!-- more rows... --&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Hover Table -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>호버 효과 테이블 (Hover)</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">No</th>
+                          <th scope="col">제품명</th>
+                          <th scope="col">카테고리</th>
+                          <th scope="col">가격</th>
+                          <th scope="col">재고</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>노트북</td>
+                          <td>전자기기</td>
+                          <td>1,500,000원</td>
+                          <td><span class="badge bg-success">재고있음</span></td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>마우스</td>
+                          <td>주변기기</td>
+                          <td>35,000원</td>
+                          <td><span class="badge bg-success">재고있음</span></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>키보드</td>
+                          <td>주변기기</td>
+                          <td>89,000원</td>
+                          <td><span class="badge bg-warning">품절임박</span></td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>모니터</td>
+                          <td>전자기기</td>
+                          <td>450,000원</td>
+                          <td><span class="badge bg-danger">품절</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="table-bootstrap-hover">Copy Code</button>
+                  </div>
+                  <pre><code id="table-bootstrap-hover">&lt;div class="table-responsive"&gt;
+  &lt;table class="table table-hover"&gt;
+    &lt;thead class="table-light"&gt;
+      &lt;tr&gt;
+        &lt;th scope="col"&gt;No&lt;/th&gt;
+        &lt;th scope="col"&gt;제품명&lt;/th&gt;
+        &lt;th scope="col"&gt;카테고리&lt;/th&gt;
+        &lt;th scope="col"&gt;가격&lt;/th&gt;
+        &lt;th scope="col"&gt;재고&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;노트북&lt;/td&gt;
+        &lt;td&gt;전자기기&lt;/td&gt;
+        &lt;td&gt;1,500,000원&lt;/td&gt;
+        &lt;td&gt;&lt;span class="badge bg-success"&gt;재고있음&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;!-- more rows... --&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Bordered Table -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>테두리 테이블 (Bordered)</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="table-responsive">
+                    <table class="table table-bordered align-middle">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col" class="text-center">상태</th>
+                          <th scope="col">프로젝트명</th>
+                          <th scope="col">담당자</th>
+                          <th scope="col">진행률</th>
+                          <th scope="col" class="text-center">마감일</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center"><span class="badge bg-success">완료</span></td>
+                          <td>홈페이지 리뉴얼</td>
+                          <td>홍길동</td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 100%">100%</div>
+                            </div>
+                          </td>
+                          <td class="text-center">2025-01-10</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center"><span class="badge bg-primary">진행중</span></td>
+                          <td>모바일 앱 개발</td>
+                          <td>김철수</td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 65%">65%</div>
+                            </div>
+                          </td>
+                          <td class="text-center">2025-02-15</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center"><span class="badge bg-warning">지연</span></td>
+                          <td>데이터베이스 마이그레이션</td>
+                          <td>이영희</td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 40%">40%</div>
+                            </div>
+                          </td>
+                          <td class="text-center">2025-01-20</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="table-bootstrap-bordered">Copy Code</button>
+                  </div>
+                  <pre><code id="table-bootstrap-bordered">&lt;div class="table-responsive"&gt;
+  &lt;table class="table table-bordered align-middle"&gt;
+    &lt;thead class="table-dark"&gt;
+      &lt;tr&gt;
+        &lt;th scope="col" class="text-center"&gt;상태&lt;/th&gt;
+        &lt;th scope="col"&gt;프로젝트명&lt;/th&gt;
+        &lt;th scope="col"&gt;담당자&lt;/th&gt;
+        &lt;th scope="col"&gt;진행률&lt;/th&gt;
+        &lt;th scope="col" class="text-center"&gt;마감일&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class="text-center"&gt;&lt;span class="badge bg-success"&gt;완료&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;홈페이지 리뉴얼&lt;/td&gt;
+        &lt;td&gt;홍길동&lt;/td&gt;
+        &lt;td&gt;
+          &lt;div class="progress"&gt;
+            &lt;div class="progress-bar bg-success" style="width: 100%"&gt;100%&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td class="text-center"&gt;2025-01-10&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;!-- more rows... --&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Small Table -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>작은 테이블 (Small)</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="table-responsive">
+                    <table class="table table-sm table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">이름</th>
+                          <th scope="col">부서</th>
+                          <th scope="col">직급</th>
+                          <th scope="col">이메일</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>홍길동</td>
+                          <td>개발팀</td>
+                          <td>팀장</td>
+                          <td>hong@example.com</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>김철수</td>
+                          <td>기획팀</td>
+                          <td>대리</td>
+                          <td>kim@example.com</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>이영희</td>
+                          <td>디자인팀</td>
+                          <td>과장</td>
+                          <td>lee@example.com</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>박민수</td>
+                          <td>개발팀</td>
+                          <td>사원</td>
+                          <td>park@example.com</td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>정수진</td>
+                          <td>마케팅팀</td>
+                          <td>주임</td>
+                          <td>jung@example.com</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="table-bootstrap-small">Copy Code</button>
+                  </div>
+                  <pre><code id="table-bootstrap-small">&lt;div class="table-responsive"&gt;
+  &lt;table class="table table-sm table-striped"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th scope="col"&gt;#&lt;/th&gt;
+        &lt;th scope="col"&gt;이름&lt;/th&gt;
+        &lt;th scope="col"&gt;부서&lt;/th&gt;
+        &lt;th scope="col"&gt;직급&lt;/th&gt;
+        &lt;th scope="col"&gt;이메일&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;홍길동&lt;/td&gt;
+        &lt;td&gt;개발팀&lt;/td&gt;
+        &lt;td&gt;팀장&lt;/td&gt;
+        &lt;td&gt;hong@example.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;!-- more rows... --&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>

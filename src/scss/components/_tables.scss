@@ -1,0 +1,188 @@
+// ============================================
+// 📊 Tables (Tabulator Customization)
+// ============================================
+// Tabulator를 Bootstrap 스타일에 맞게 커스터마이징
+
+.tabulator {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background-color: #fff;
+
+  // 플랫 디자인 - 그림자 제거
+  box-shadow: none;
+
+  // 헤더 스타일
+  .tabulator-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid $border-color;
+    font-weight: $font-weight-semibold;
+    box-shadow: none;
+
+    .tabulator-col {
+      background-color: transparent;
+      border-right: 1px solid $border-color;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      // 정렬 가능한 컬럼 호버
+      &.tabulator-sortable:hover {
+        background-color: rgba($primary, 0.05);
+      }
+
+      // 정렬 화살표 컬러
+      .tabulator-col-sorter {
+        color: $primary;
+      }
+
+      // 활성 정렬 컬럼
+      &.tabulator-col-sorter-element {
+        &[aria-sort="asc"],
+        &[aria-sort="desc"] {
+          background-color: rgba($primary, 0.1);
+        }
+      }
+    }
+
+    .tabulator-col-content {
+      padding: 0.75rem;
+    }
+
+    .tabulator-col-title {
+      color: #212529;
+    }
+  }
+
+  // 테이블 본문
+  .tabulator-tableholder {
+    .tabulator-table {
+      background-color: #fff;
+    }
+
+    // 행 스타일
+    .tabulator-row {
+      min-height: 40px;
+      border-bottom: 1px solid $border-color;
+
+      &:hover {
+        background-color: rgba($primary, 0.05);
+      }
+
+      &.tabulator-row-even {
+        background-color: rgba(0, 0, 0, 0.02);
+      }
+
+      // 선택된 행
+      &.tabulator-selected {
+        background-color: rgba($primary, 0.1);
+      }
+    }
+
+    // 셀 스타일
+    .tabulator-cell {
+      padding: 0.75rem;
+      border-right: 1px solid $border-color;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  // 페이지네이션
+  .tabulator-footer {
+    background-color: #f8f9fa;
+    border-top: 2px solid $border-color;
+    padding: 0.75rem 1rem;
+
+    .tabulator-paginator {
+      color: #212529;
+      font-weight: $font-weight-normal;
+
+      label {
+        margin-right: 1rem;
+      }
+
+      select {
+        padding: 0.25rem 0.5rem;
+        border: 1px solid $border-color;
+        border-radius: $border-radius-sm;
+        background-color: #fff;
+        font-size: 0.875rem;
+
+        &:focus {
+          border-color: $primary;
+          outline: none;
+          box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
+        }
+      }
+    }
+
+    // 페이지 버튼
+    .tabulator-page {
+      display: inline-block;
+      padding: 0.375rem 0.75rem;
+      margin: 0 0.125rem;
+      border: 1px solid $border-color;
+      border-radius: $border-radius-sm;
+      background-color: #fff;
+      color: #212529;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover:not(.disabled) {
+        background-color: rgba($primary, 0.1);
+        border-color: $primary;
+        color: $primary;
+      }
+
+      &.active {
+        background-color: $primary;
+        border-color: $primary;
+        color: #fff;
+        font-weight: $font-weight-semibold;
+      }
+
+      &.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        color: #6c757d;
+      }
+    }
+
+    // 페이지 텍스트
+    .tabulator-page-counter {
+      color: #6c757d;
+      font-size: 0.875rem;
+      margin: 0 1rem;
+    }
+  }
+
+  // 로딩 스피너
+  .tabulator-loader {
+    border-color: rgba($primary, 0.2);
+    border-top-color: $primary;
+  }
+
+  // 빈 데이터 메시지
+  .tabulator-placeholder {
+    color: #6c757d;
+    font-size: 1rem;
+
+    span {
+      padding: 2rem;
+    }
+  }
+}
+
+// 반응형 - 작은 화면에서 스크롤 가능하게
+@media (max-width: 768px) {
+  .tabulator {
+    .tabulator-tableholder {
+      overflow-x: auto;
+    }
+  }
+}

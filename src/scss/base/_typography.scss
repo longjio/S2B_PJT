@@ -1,0 +1,104 @@
+// ============================================
+// 📝 Typography
+// ============================================
+// 타이포그래피 관련 기본 스타일
+
+// --------------------------------------------
+// 제목 스타일
+// --------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  font-weight: $font-weight-bold;
+  line-height: 1.2;
+  color: #212529;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+// --------------------------------------------
+// 단락 스타일
+// --------------------------------------------
+p {
+  margin-bottom: 1rem;
+  line-height: $line-height-base;
+}
+
+// --------------------------------------------
+// 강조 텍스트
+// --------------------------------------------
+strong,
+b {
+  font-weight: $font-weight-bold;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+small {
+  font-size: 0.875rem;
+}
+
+// --------------------------------------------
+// 코드 블록
+// --------------------------------------------
+code,
+pre {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.875rem;
+}
+
+code {
+  padding: 0.2rem 0.4rem;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  color: #e83e8c;
+}
+
+pre {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 0.375rem;
+  overflow-x: auto;
+
+  code {
+    padding: 0;
+    background-color: transparent;
+    color: inherit;
+  }
+}
+
+// --------------------------------------------
+// 인용문
+// --------------------------------------------
+blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid $primary-color;
+  color: #6c757d;
+  font-style: italic;
+}
+
+// --------------------------------------------
+// 수평선
+// --------------------------------------------
+hr {
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid $border-color;
+}
+
+// --------------------------------------------
+// 텍스트 유틸리티
+// --------------------------------------------
+.text-light { font-weight: $font-weight-light; }
+.text-normal { font-weight: $font-weight-normal; }
+.text-medium { font-weight: $font-weight-medium; }
+.text-semibold { font-weight: $font-weight-semibold; }
+.text-bold { font-weight: $font-weight-bold; }

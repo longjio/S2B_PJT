@@ -1,0 +1,259 @@
+// ============================================
+// 🎨 Component Showcase Layout
+// ============================================
+// 컴포넌트 쇼케이스 전용 레이아웃 스타일
+
+.showcase {
+  &__header {
+    padding: 3rem 0 2rem;
+    background: linear-gradient(135deg, $primary 0%, darken($primary, 15%) 100%);
+    color: #fff;
+    margin-bottom: 3rem;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: $font-weight-bold;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+      opacity: 0.9;
+      margin-bottom: 0;
+    }
+  }
+
+  &__nav {
+    position: sticky;
+    top: 50px;
+    background-color: transparent;
+    padding: 1.5rem 0;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+
+    h5 {
+      font-size: 0.875rem;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+      color: #6c757d;
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      display: block;
+      padding: 0.5rem 0.75rem;
+      color: #212529;
+      text-decoration: none;
+      border-radius: $border-radius-sm;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: rgba($primary, 0.1);
+        color: $primary;
+        padding-left: 1rem;
+      }
+
+      &.active {
+        background-color: $primary;
+        color: #fff;
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+
+  &__section {
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 0.3s ease-in-out;
+
+    &-title {
+      font-size: 2rem;
+      font-weight: $font-weight-bold;
+      margin-bottom: 0.5rem;
+    }
+
+    &-description {
+      color: #6c757d;
+      margin-bottom: 2rem;
+      font-size: 1.125rem;
+    }
+  }
+
+  &__item {
+    background-color: #fff;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      background-color: #f8f9fa;
+      border-bottom: 1px solid $border-color;
+
+      h4 {
+        font-size: 1.125rem;
+        font-weight: $font-weight-semibold;
+        margin: 0;
+        color: #212529;
+      }
+    }
+
+    &-preview {
+      padding: 2rem 1.5rem;
+      background-color: #fff;
+      border-bottom: 1px solid $border-color;
+    }
+
+    &-code {
+      position: relative;
+      background-color: #282c34;
+      padding: 0;
+      margin: 0;
+
+      pre {
+        margin: 0;
+        padding: 1.5rem;
+        background-color: transparent;
+        color: #abb2bf;
+        font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        font-size: 0.875rem;
+        line-height: 1.6;
+        overflow-x: auto;
+        border-radius: 0;
+
+        code {
+          padding: 0;
+          background-color: transparent;
+          color: inherit;
+        }
+      }
+    }
+
+    &-actions {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+}
+
+// 코드 복사 버튼
+.btn-copy {
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: $border-radius-sm;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &.copied {
+    background-color: $success;
+    border-color: $success;
+
+    &::after {
+      content: ' ✓';
+    }
+  }
+}
+
+// 코드 하이라이팅 (간단한 버전)
+.code-highlight {
+  .tag {
+    color: #e06c75;
+  }
+
+  .attr {
+    color: #d19a66;
+  }
+
+  .string {
+    color: #98c379;
+  }
+
+  .class {
+    color: #61afef;
+  }
+}
+
+// 페이드인 애니메이션
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Scrollspy Simple Anchors 스타일링
+.simple-list-example-scrollspy {
+  a {
+    color: $primary;
+    text-decoration: none;
+    background-color: #f8f9fa;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: rgba($primary, 0.1);
+    }
+
+    &.active {
+      background-color: $primary;
+      color: #fff;
+      font-weight: $font-weight-medium;
+    }
+  }
+}
+
+// 반응형
+@include respond-to(xs) {
+  .showcase {
+    &__nav {
+      position: static;
+      margin-bottom: 2rem;
+      max-height: none;
+    }
+
+    &__section-title {
+      font-size: 1.5rem;
+    }
+
+    &__item {
+      &-preview {
+        padding: 1.5rem 1rem;
+      }
+
+      &-code pre {
+        padding: 1rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,3354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bootstrap Component Showcase - Copy & Paste Components">
+  <title>Bootstrap Component Showcase</title>
+  <link rel="stylesheet" href="/scss/main.scss">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="header">
+  <div class="header__container">
+    <a href="/" class="header__logo">Bootstrap Showcase</a>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="/" class="header__link is-active">Components</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Sidebar Navigation -->
+          <aside class="col-lg-2 col-md-3">
+            <nav class="showcase__nav">
+              <h5>Components</h5>
+              <ul>
+                <li><a href="#accordion" class="active" data-tab="accordion">Accordion</a></li>
+                <li><a href="#alerts" data-tab="alerts">Alerts</a></li>
+                <li><a href="#badges" data-tab="badges">Badges</a></li>
+                <li><a href="#breadcrumb" data-tab="breadcrumb">Breadcrumb</a></li>
+                <li><a href="#buttons" data-tab="buttons">Buttons</a></li>
+                <li><a href="#button-groups" data-tab="button-groups">Button Groups</a></li>
+                <li><a href="#cards" data-tab="cards">Cards</a></li>
+                <li><a href="#carousel" data-tab="carousel">Carousel</a></li>
+                <li><a href="#close-button" data-tab="close-button">Close Button</a></li>
+                <li><a href="#collapse" data-tab="collapse">Collapse</a></li>
+                <li><a href="#dropdowns" data-tab="dropdowns">Dropdowns</a></li>
+                <li><a href="#list-group" data-tab="list-group">List Group</a></li>
+                <li><a href="#modals" data-tab="modals">Modals</a></li>
+                <li><a href="#navbar" data-tab="navbar">Navbar</a></li>
+                <li><a href="#navs" data-tab="navs">Navs & Tabs</a></li>
+                <li><a href="#offcanvas" data-tab="offcanvas">Offcanvas</a></li>
+                <li><a href="#pagination" data-tab="pagination">Pagination</a></li>
+                <li><a href="#placeholders" data-tab="placeholders">Placeholders</a></li>
+                <li><a href="#popovers" data-tab="popovers">Popovers</a></li>
+                <li><a href="#progress" data-tab="progress">Progress</a></li>
+                <li><a href="#scrollspy" data-tab="scrollspy">Scrollspy</a></li>
+                <li><a href="#spinners" data-tab="spinners">Spinners</a></li>
+                <li><a href="#tables" data-tab="tables">Tables</a></li>
+                <li><a href="#toasts" data-tab="toasts">Toasts</a></li>
+                <li><a href="#tooltips" data-tab="tooltips">Tooltips</a></li>
+              </ul>
+            </nav>
+          </aside>
+
+          <!-- Components Content -->
+          <div class="col-lg-10 col-md-9">
+
+            <!-- ========================================
+                 ACCORDION SECTION
+            ========================================= -->
+            <section id="accordion" class="showcase__section" data-tab-content="accordion">
+              <h2 class="showcase__section-title">Accordion</h2>
+              <p class="showcase__section-description">
+                아코디언 컴포넌트를 사용하여 콘텐츠를 접었다 펼칠 수 있습니다.
+              </p>
+
+              <!-- Basic Accordion -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Accordion</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="accordion-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="accordion-basic">&lt;div class="accordion" id="accordionExample"&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;h2 class="accordion-header"&gt;
+      &lt;button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"&gt;
+        Accordion Item #1
+      &lt;/button&gt;
+    &lt;/h2&gt;
+    &lt;div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample"&gt;
+      &lt;div class="accordion-body"&gt;
+        Content for first item
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;h2 class="accordion-header"&gt;
+      &lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"&gt;
+        Accordion Item #2
+      &lt;/button&gt;
+    &lt;/h2&gt;
+    &lt;div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample"&gt;
+      &lt;div class="accordion-body"&gt;
+        Content for second item
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Flush Accordion -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Flush Accordion</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Flush Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">테두리 없는 플러시 스타일의 아코디언입니다.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Flush Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">두 번째 플러시 아코디언 항목의 내용입니다.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="accordion-flush">Copy Code</button>
+                  </div>
+                  <pre><code id="accordion-flush">&lt;div class="accordion accordion-flush" id="accordionFlushExample"&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;h2 class="accordion-header"&gt;
+      &lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"&gt;
+        Flush Accordion Item #1
+      &lt;/button&gt;
+    &lt;/h2&gt;
+    &lt;div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"&gt;
+      &lt;div class="accordion-body"&gt;Content&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Always Open Accordion -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Always Open Accordion</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                          이 아코디언은 다른 항목이 열려도 닫히지 않습니다.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          여러 항목을 동시에 열어둘 수 있습니다.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="accordion-always-open">Copy Code</button>
+                  </div>
+                  <pre><code id="accordion-always-open">&lt;div class="accordion" id="accordionPanelsStayOpenExample"&gt;
+  &lt;div class="accordion-item"&gt;
+    &lt;h2 class="accordion-header"&gt;
+      &lt;button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"&gt;
+        Accordion Item #1
+      &lt;/button&gt;
+    &lt;/h2&gt;
+    &lt;div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"&gt;
+      &lt;div class="accordion-body"&gt;Content&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 BUTTONS SECTION
+            ========================================= -->
+            <section id="buttons" class="showcase__section" data-tab-content="buttons">
+              <h2 class="showcase__section-title">Buttons</h2>
+              <p class="showcase__section-description">
+                Bootstrap의 다양한 버튼 스타일과 사이즈를 확인하고 복사하세요.
+              </p>
+
+              <!-- Basic Buttons -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Buttons</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button class="btn btn-primary me-2 mb-2">Primary</button>
+                  <button class="btn btn-secondary me-2 mb-2">Secondary</button>
+                  <button class="btn btn-success me-2 mb-2">Success</button>
+                  <button class="btn btn-danger me-2 mb-2">Danger</button>
+                  <button class="btn btn-warning me-2 mb-2">Warning</button>
+                  <button class="btn btn-info me-2 mb-2">Info</button>
+                  <button class="btn btn-light me-2 mb-2">Light</button>
+                  <button class="btn btn-dark me-2 mb-2">Dark</button>
+                  <button class="btn btn-link me-2 mb-2">Link</button>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="basic-buttons">Copy Code</button>
+                  </div>
+                  <pre><code id="basic-buttons">&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+&lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;
+&lt;button class="btn btn-warning"&gt;Warning&lt;/button&gt;
+&lt;button class="btn btn-info"&gt;Info&lt;/button&gt;
+&lt;button class="btn btn-light"&gt;Light&lt;/button&gt;
+&lt;button class="btn btn-dark"&gt;Dark&lt;/button&gt;
+&lt;button class="btn btn-link"&gt;Link&lt;/button&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Outline Buttons -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Outline Buttons</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button class="btn btn-outline-primary me-2 mb-2">Primary</button>
+                  <button class="btn btn-outline-secondary me-2 mb-2">Secondary</button>
+                  <button class="btn btn-outline-success me-2 mb-2">Success</button>
+                  <button class="btn btn-outline-danger me-2 mb-2">Danger</button>
+                  <button class="btn btn-outline-warning me-2 mb-2">Warning</button>
+                  <button class="btn btn-outline-info me-2 mb-2">Info</button>
+                  <button class="btn btn-outline-dark me-2 mb-2">Dark</button>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="outline-buttons">Copy Code</button>
+                  </div>
+                  <pre><code id="outline-buttons">&lt;button class="btn btn-outline-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-outline-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button class="btn btn-outline-success"&gt;Success&lt;/button&gt;
+&lt;button class="btn btn-outline-danger"&gt;Danger&lt;/button&gt;
+&lt;button class="btn btn-outline-warning"&gt;Warning&lt;/button&gt;
+&lt;button class="btn btn-outline-info"&gt;Info&lt;/button&gt;
+&lt;button class="btn btn-outline-dark"&gt;Dark&lt;/button&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Button Sizes -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Button Sizes</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button class="btn btn-primary btn-lg me-2 mb-2">Large Button</button>
+                  <button class="btn btn-primary me-2 mb-2">Default Button</button>
+                  <button class="btn btn-primary btn-sm me-2 mb-2">Small Button</button>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="button-sizes">Copy Code</button>
+                  </div>
+                  <pre><code id="button-sizes">&lt;button class="btn btn-primary btn-lg"&gt;Large Button&lt;/button&gt;
+&lt;button class="btn btn-primary"&gt;Default Button&lt;/button&gt;
+&lt;button class="btn btn-primary btn-sm"&gt;Small Button&lt;/button&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Disabled State -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Disabled State</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button class="btn btn-primary me-2 mb-2" disabled>Disabled Button</button>
+                  <button class="btn btn-outline-secondary me-2 mb-2" disabled>Disabled Outline</button>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="disabled-buttons">Copy Code</button>
+                  </div>
+                  <pre><code id="disabled-buttons">&lt;button class="btn btn-primary" disabled&gt;Disabled Button&lt;/button&gt;
+&lt;button class="btn btn-outline-secondary" disabled&gt;Disabled Outline&lt;/button&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Block Buttons -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Block Buttons (Full Width)</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary">Block Button</button>
+                    <button class="btn btn-outline-secondary">Block Outline Button</button>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="block-buttons">Copy Code</button>
+                  </div>
+                  <pre><code id="block-buttons">&lt;div class="d-grid gap-2"&gt;
+  &lt;button class="btn btn-primary"&gt;Block Button&lt;/button&gt;
+  &lt;button class="btn btn-outline-secondary"&gt;Block Outline Button&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 BUTTON GROUPS SECTION
+            ========================================= -->
+            <section id="button-groups" class="showcase__section" data-tab-content="button-groups">
+              <h2 class="showcase__section-title">Button Groups</h2>
+              <p class="showcase__section-description">
+                버튼을 그룹으로 묶어 하나의 UI 요소처럼 표시합니다.
+              </p>
+
+              <!-- Basic Button Group -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Button Group</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-primary">Left</button>
+                    <button type="button" class="btn btn-primary">Middle</button>
+                    <button type="button" class="btn btn-primary">Right</button>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="button-group-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="button-group-basic">&lt;div class="btn-group" role="group"&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Left&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Right&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Button Toolbar -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Button Toolbar</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-group me-2" role="group">
+                      <button type="button" class="btn btn-primary">1</button>
+                      <button type="button" class="btn btn-primary">2</button>
+                      <button type="button" class="btn btn-primary">3</button>
+                    </div>
+                    <div class="btn-group me-2" role="group">
+                      <button type="button" class="btn btn-secondary">4</button>
+                      <button type="button" class="btn btn-secondary">5</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                      <button type="button" class="btn btn-info">6</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="button-toolbar">Copy Code</button>
+                  </div>
+                  <pre><code id="button-toolbar">&lt;div class="btn-toolbar" role="toolbar"&gt;
+  &lt;div class="btn-group me-2" role="group"&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;1&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;2&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;3&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="btn-group me-2" role="group"&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;4&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;5&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 BADGES SECTION
+            ========================================= -->
+            <section id="badges" class="showcase__section" data-tab-content="badges">
+              <h2 class="showcase__section-title">Badges</h2>
+              <p class="showcase__section-description">
+                작은 카운트나 레이블을 표시하는 데 사용되는 배지 컴포넌트입니다.
+              </p>
+
+              <!-- Basic Badges -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Badges</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <span class="badge bg-primary me-2">Primary</span>
+                  <span class="badge bg-secondary me-2">Secondary</span>
+                  <span class="badge bg-success me-2">Success</span>
+                  <span class="badge bg-danger me-2">Danger</span>
+                  <span class="badge bg-warning text-dark me-2">Warning</span>
+                  <span class="badge bg-info text-dark me-2">Info</span>
+                  <span class="badge bg-light text-dark me-2">Light</span>
+                  <span class="badge bg-dark me-2">Dark</span>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="badges-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="badges-basic">&lt;span class="badge bg-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="badge bg-secondary"&gt;Secondary&lt;/span&gt;
+&lt;span class="badge bg-success"&gt;Success&lt;/span&gt;
+&lt;span class="badge bg-danger"&gt;Danger&lt;/span&gt;
+&lt;span class="badge bg-warning text-dark"&gt;Warning&lt;/span&gt;
+&lt;span class="badge bg-info text-dark"&gt;Info&lt;/span&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Pill Badges -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Pill Badges</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <span class="badge rounded-pill bg-primary me-2">Primary</span>
+                  <span class="badge rounded-pill bg-secondary me-2">Secondary</span>
+                  <span class="badge rounded-pill bg-success me-2">Success</span>
+                  <span class="badge rounded-pill bg-danger me-2">Danger</span>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="badges-pill">Copy Code</button>
+                  </div>
+                  <pre><code id="badges-pill">&lt;span class="badge rounded-pill bg-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="badge rounded-pill bg-secondary"&gt;Secondary&lt;/span&gt;
+&lt;span class="badge rounded-pill bg-success"&gt;Success&lt;/span&gt;
+&lt;span class="badge rounded-pill bg-danger"&gt;Danger&lt;/span&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 BREADCRUMB SECTION
+            ========================================= -->
+            <section id="breadcrumb" class="showcase__section" data-tab-content="breadcrumb">
+              <h2 class="showcase__section-title">Breadcrumb</h2>
+              <p class="showcase__section-description">
+                현재 페이지의 위치를 나타내는 네비게이션 컴포넌트입니다.
+              </p>
+
+              <!-- Basic Breadcrumb -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Breadcrumb</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    </ol>
+                  </nav>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                  </nav>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Library</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                  </nav>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="breadcrumb-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="breadcrumb-basic">&lt;nav aria-label="breadcrumb"&gt;
+  &lt;ol class="breadcrumb"&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item active" aria-current="page"&gt;Data&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Custom Divider -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Custom Divider</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                  </nav>
+                  <nav style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                  </nav>
+                  <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                  </nav>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="breadcrumb-divider">Copy Code</button>
+                  </div>
+                  <pre><code id="breadcrumb-divider">&lt;nav style="--bs-breadcrumb-divider: '&gt;';" aria-label="breadcrumb"&gt;
+  &lt;ol class="breadcrumb"&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item active" aria-current="page"&gt;Library&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 ALERTS SECTION
+            ========================================= -->
+            <section id="alerts" class="showcase__section" data-tab-content="alerts">
+              <h2 class="showcase__section-title">Alerts</h2>
+              <p class="showcase__section-description">
+                사용자에게 메시지를 표시하는 알림 컴포넌트입니다.
+              </p>
+
+              <!-- Basic Alerts -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Alerts</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="alert alert-primary" role="alert">
+                    This is a primary alert—check it out!
+                  </div>
+                  <div class="alert alert-success" role="alert">
+                    This is a success alert—check it out!
+                  </div>
+                  <div class="alert alert-danger" role="alert">
+                    This is a danger alert—check it out!
+                  </div>
+                  <div class="alert alert-warning" role="alert">
+                    This is a warning alert—check it out!
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="alerts-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="alerts-basic">&lt;div class="alert alert-primary" role="alert"&gt;
+  This is a primary alert—check it out!
+&lt;/div&gt;
+&lt;div class="alert alert-success" role="alert"&gt;
+  This is a success alert—check it out!
+&lt;/div&gt;
+&lt;div class="alert alert-danger" role="alert"&gt;
+  This is a danger alert—check it out!
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Dismissible Alerts -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Dismissible Alerts</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>Well done!</strong> You successfully read this important alert message.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="alerts-dismissible">Copy Code</button>
+                  </div>
+                  <pre><code id="alerts-dismissible">&lt;div class="alert alert-success alert-dismissible fade show" role="alert"&gt;
+  &lt;strong&gt;Well done!&lt;/strong&gt; You successfully read this important alert message.
+  &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 CARDS SECTION
+            ========================================= -->
+            <section id="cards" class="showcase__section" data-tab-content="cards">
+              <h2 class="showcase__section-title">Cards</h2>
+              <p class="showcase__section-description">
+                다양한 콘텐츠를 담을 수 있는 유연한 카드 컴포넌트입니다.
+              </p>
+
+              <!-- Basic Card -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Card</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card Title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="card-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="card-basic">&lt;div class="card"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card Title&lt;/h5&gt;
+    &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Card with Image -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Card with Image</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#868e96"></rect>
+                          <text x="50%" y="50%" fill="#dee2e6" dy=".3em" text-anchor="middle">Image</text>
+                        </svg>
+                        <div class="card-body">
+                          <h5 class="card-title">Card with Image</h5>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="card-image">Copy Code</button>
+                  </div>
+                  <pre><code id="card-image">&lt;div class="card"&gt;
+  &lt;img src="..." class="card-img-top" alt="..."&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Card with Image&lt;/h5&gt;
+    &lt;p class="card-text"&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Card with Header and Footer -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Card with Header and Footer</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-header">
+                          Featured
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                          2 days ago
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="card-header-footer">Copy Code</button>
+                  </div>
+                  <pre><code id="card-header-footer">&lt;div class="card"&gt;
+  &lt;div class="card-header"&gt;
+    Featured
+  &lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class="card-text"&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="card-footer text-muted"&gt;
+    2 days ago
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Colored Cards -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Colored Cards</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="row g-3">
+                    <div class="col-md-4">
+                      <div class="card text-bg-primary">
+                        <div class="card-body">
+                          <h5 class="card-title">Primary Card</h5>
+                          <p class="card-text">Some quick example text.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card text-bg-success">
+                        <div class="card-body">
+                          <h5 class="card-title">Success Card</h5>
+                          <p class="card-text">Some quick example text.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card text-bg-danger">
+                        <div class="card-body">
+                          <h5 class="card-title">Danger Card</h5>
+                          <p class="card-text">Some quick example text.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="card-colored">Copy Code</button>
+                  </div>
+                  <pre><code id="card-colored">&lt;div class="card text-bg-primary"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Primary Card&lt;/h5&gt;
+    &lt;p class="card-text"&gt;Some quick example text.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card text-bg-success"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Success Card&lt;/h5&gt;
+    &lt;p class="card-text"&gt;Some quick example text.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card text-bg-danger"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Danger Card&lt;/h5&gt;
+    &lt;p class="card-text"&gt;Some quick example text.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Card with List Group -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Card with List Group</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-header">
+                          Featured
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">항목 1</li>
+                          <li class="list-group-item">항목 2</li>
+                          <li class="list-group-item">항목 3</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="card-list-group">Copy Code</button>
+                  </div>
+                  <pre><code id="card-list-group">&lt;div class="card"&gt;
+  &lt;div class="card-header"&gt;Featured&lt;/div&gt;
+  &lt;ul class="list-group list-group-flush"&gt;
+    &lt;li class="list-group-item"&gt;항목 1&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;항목 2&lt;/li&gt;
+    &lt;li class="list-group-item"&gt;항목 3&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class="card-body"&gt;
+    &lt;a href="#" class="card-link"&gt;Card link&lt;/a&gt;
+    &lt;a href="#" class="card-link"&gt;Another link&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Horizontal Card -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Horizontal Card</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <svg class="img-fluid rounded-start" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#868e96"></rect>
+                          <text x="50%" y="50%" fill="#dee2e6" dy=".3em" text-anchor="middle">Image</text>
+                        </svg>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Horizontal Card</h5>
+                          <p class="card-text">This is a horizontal card. You can place an image on the left and content on the right.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="card-horizontal">Copy Code</button>
+                  </div>
+                  <pre><code id="card-horizontal">&lt;div class="card mb-3" style="max-width: 540px;"&gt;
+  &lt;div class="row g-0"&gt;
+    &lt;div class="col-md-4"&gt;
+      &lt;img src="..." class="img-fluid rounded-start" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-8"&gt;
+      &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Horizontal Card&lt;/h5&gt;
+        &lt;p class="card-text"&gt;This is a horizontal card.&lt;/p&gt;
+        &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Card with Border -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Card with Border Colors</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="row g-3">
+                    <div class="col-md-4">
+                      <div class="card border-primary">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Primary Border</h5>
+                          <p class="card-text">Card with primary border color.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card border-success">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Success Border</h5>
+                          <p class="card-text">Card with success border color.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card border-danger">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Danger Border</h5>
+                          <p class="card-text">Card with danger border color.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="card-border">Copy Code</button>
+                  </div>
+                  <pre><code id="card-border">&lt;div class="card border-primary"&gt;
+  &lt;div class="card-header"&gt;Header&lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Primary Border&lt;/h5&gt;
+    &lt;p class="card-text"&gt;Card with primary border color.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Card Grid -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Card Grid Layout</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Card 1</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Card 2</h5>
+                          <p class="card-text">This is a short card.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title">Card 3</h5>
+                          <p class="card-text">This is a longer card with supporting text.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="card-grid">Copy Code</button>
+                  </div>
+                  <pre><code id="card-grid">&lt;div class="row row-cols-1 row-cols-md-3 g-4"&gt;
+  &lt;div class="col"&gt;
+    &lt;div class="card h-100"&gt;
+      &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Card 1&lt;/h5&gt;
+        &lt;p class="card-text"&gt;This is a longer card with supporting text.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col"&gt;
+    &lt;div class="card h-100"&gt;
+      &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Card 2&lt;/h5&gt;
+        &lt;p class="card-text"&gt;This is a short card.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Card with Navigation -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Card with Navigation Tabs</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="card text-center">
+                        <div class="card-header">
+                          <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="true" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="card-nav">Copy Code</button>
+                  </div>
+                  <pre><code id="card-nav">&lt;div class="card text-center"&gt;
+  &lt;div class="card-header"&gt;
+    &lt;ul class="nav nav-tabs card-header-tabs"&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link disabled"&gt;Disabled&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;Special title treatment&lt;/h5&gt;
+    &lt;p class="card-text"&gt;With supporting text below.&lt;/p&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 CAROUSEL SECTION
+            ========================================= -->
+            <section id="carousel" class="showcase__section" data-tab-content="carousel">
+              <h2 class="showcase__section-title">Carousel</h2>
+              <p class="showcase__section-description">
+                슬라이드쇼 형태의 이미지나 콘텐츠를 순환하여 보여주는 컴포넌트입니다.
+              </p>
+
+              <!-- Basic Carousel -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Carousel (Slides Only)</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div id="carouselBasic" class="carousel slide" style="max-width: 600px; margin: 0 auto;">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#7e00ff"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">First slide</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#198754"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Second slide</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#dc3545"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Third slide</text>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="carousel-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="carousel-basic">&lt;div id="carouselBasic" class="carousel slide"&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Carousel with Controls -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Carousel with Controls</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div id="carouselControls" class="carousel slide" style="max-width: 600px; margin: 0 auto;">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#7e00ff"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">First slide</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#198754"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Second slide</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#dc3545"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Third slide</text>
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="carousel-controls">Copy Code</button>
+                  </div>
+                  <pre><code id="carousel-controls">&lt;div id="carouselControls" class="carousel slide"&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev"&gt;
+    &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next"&gt;
+    &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Carousel with Indicators -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Carousel with Indicators</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div id="carouselIndicators" class="carousel slide" style="max-width: 600px; margin: 0 auto;">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#7e00ff"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">First slide</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#198754"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Second slide</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#dc3545"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Third slide</text>
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="carousel-indicators">Copy Code</button>
+                  </div>
+                  <pre><code id="carousel-indicators">&lt;div id="carouselIndicators" class="carousel slide"&gt;
+  &lt;div class="carousel-indicators"&gt;
+    &lt;button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"&gt;&lt;/button&gt;
+    &lt;button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"&gt;&lt;/button&gt;
+    &lt;button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev"&gt;
+    &lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next"&gt;
+    &lt;span class="carousel-control-next-icon"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Carousel with Captions -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Carousel with Captions</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel" style="max-width: 600px; margin: 0 auto;">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#7e00ff"></rect>
+                        </svg>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#198754"></rect>
+                        </svg>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#dc3545"></rect>
+                        </svg>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="carousel-captions">Copy Code</button>
+                  </div>
+                  <pre><code id="carousel-captions">&lt;div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel"&gt;
+  &lt;div class="carousel-indicators"&gt;
+    &lt;button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"&gt;&lt;/button&gt;
+    &lt;button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"&gt;&lt;/button&gt;
+    &lt;button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+      &lt;div class="carousel-caption d-none d-md-block"&gt;
+        &lt;h5&gt;First slide label&lt;/h5&gt;
+        &lt;p&gt;Some representative placeholder content for the first slide.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+      &lt;div class="carousel-caption d-none d-md-block"&gt;
+        &lt;h5&gt;Second slide label&lt;/h5&gt;
+        &lt;p&gt;Some representative placeholder content for the second slide.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev"&gt;
+    &lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next"&gt;
+    &lt;span class="carousel-control-next-icon"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Carousel with Fade Effect -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Carousel with Fade Effect</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 600px; margin: 0 auto;">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#7e00ff"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Fade 1</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#198754"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Fade 2</text>
+                        </svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          <rect width="100%" height="100%" fill="#dc3545"></rect>
+                          <text x="50%" y="50%" fill="#fff" dy=".3em" text-anchor="middle" font-size="48">Fade 3</text>
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="carousel-fade">Copy Code</button>
+                  </div>
+                  <pre><code id="carousel-fade">&lt;div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel"&gt;
+  &lt;div class="carousel-inner"&gt;
+    &lt;div class="carousel-item active"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel-item"&gt;
+      &lt;img src="..." class="d-block w-100" alt="..."&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev"&gt;
+    &lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next"&gt;
+    &lt;span class="carousel-control-next-icon"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 CLOSE BUTTON SECTION
+            ========================================= -->
+            <section id="close-button" class="showcase__section" data-tab-content="close-button">
+              <h2 class="showcase__section-title">Close Button</h2>
+              <p class="showcase__section-description">
+                모달, 알림, 토스트 등을 닫는데 사용되는 닫기 버튼입니다.
+              </p>
+
+              <!-- Basic Close Button -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Close Button</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="close-button-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="close-button-basic">&lt;button type="button" class="btn-close" aria-label="Close"&gt;&lt;/button&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Disabled Close Button -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Disabled Close Button</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button type="button" class="btn-close" disabled aria-label="Close"></button>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="close-button-disabled">Copy Code</button>
+                  </div>
+                  <pre><code id="close-button-disabled">&lt;button type="button" class="btn-close" disabled aria-label="Close"&gt;&lt;/button&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- White Variant -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>White Variant (for dark backgrounds)</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="bg-dark p-4 rounded">
+                    <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="close-button-white">Copy Code</button>
+                  </div>
+                  <pre><code id="close-button-white">&lt;button type="button" class="btn-close btn-close-white" aria-label="Close"&gt;&lt;/button&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 COLLAPSE SECTION
+            ========================================= -->
+            <section id="collapse" class="showcase__section" data-tab-content="collapse">
+              <h2 class="showcase__section-title">Collapse</h2>
+              <p class="showcase__section-description">
+                콘텐츠의 표시 여부를 토글하는 컴포넌트입니다.
+              </p>
+
+              <!-- Basic Collapse -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Collapse</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Toggle Collapse
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user clicks the button.
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="collapse-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="collapse-basic">&lt;button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"&gt;
+  Toggle Collapse
+&lt;/button&gt;
+&lt;div class="collapse" id="collapseExample"&gt;
+  &lt;div class="card card-body"&gt;
+    Content here...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Multiple Targets -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Multiple Targets</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <p>
+                    <button class="btn btn-primary me-2" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false">
+                      Toggle first element
+                    </button>
+                    <button class="btn btn-primary me-2" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false">
+                      Toggle second element
+                    </button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false">
+                      Toggle both elements
+                    </button>
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                          First collapse content
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                          Second collapse content
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="collapse-multiple">Copy Code</button>
+                  </div>
+                  <pre><code id="collapse-multiple">&lt;button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".multi-collapse"&gt;
+  Toggle both
+&lt;/button&gt;
+&lt;div class="collapse multi-collapse" id="multiCollapseExample1"&gt;
+  &lt;div class="card card-body"&gt;First content&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapse multi-collapse" id="multiCollapseExample2"&gt;
+  &lt;div class="card card-body"&gt;Second content&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 DROPDOWNS SECTION
+            ========================================= -->
+            <section id="dropdowns" class="showcase__section" data-tab-content="dropdowns">
+              <h2 class="showcase__section-title">Dropdowns</h2>
+              <p class="showcase__section-description">
+                버튼을 클릭하여 링크와 옵션 목록을 표시하는 드롭다운 메뉴입니다.
+              </p>
+
+              <!-- Basic Dropdown -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Dropdown</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="dropdown-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="dropdown-basic">&lt;div class="dropdown"&gt;
+  &lt;button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"&gt;
+    Dropdown button
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Dropdown Variants -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Dropdown Color Variants</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="dropdown d-inline-block me-2">
+                    <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                      Success
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown d-inline-block me-2">
+                    <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                      Danger
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown d-inline-block">
+                    <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                      Warning
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="dropdown-variants">Copy Code</button>
+                  </div>
+                  <pre><code id="dropdown-variants">&lt;div class="dropdown"&gt;
+  &lt;button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown"&gt;
+    Success
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Split Dropdown -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Split Button Dropdown</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Action</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="dropdown-split">Copy Code</button>
+                  </div>
+                  <pre><code id="dropdown-split">&lt;div class="btn-group"&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;Action&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"&gt;
+    &lt;span class="visually-hidden"&gt;Toggle Dropdown&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;hr class="dropdown-divider"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Dropdown Directions -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Dropdown Directions</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="btn-group dropend me-2">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                      Dropend
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group dropup me-2">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                      Dropup
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group dropstart">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                      Dropstart
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="dropdown-directions">Copy Code</button>
+                  </div>
+                  <pre><code id="dropdown-directions">&lt;!-- Dropend --&gt;
+&lt;div class="btn-group dropend"&gt;
+  &lt;button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"&gt;
+    Dropend
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;...&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- Dropup --&gt;
+&lt;div class="btn-group dropup"&gt;
+  &lt;button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"&gt;
+    Dropup
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu"&gt;...&lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 LIST GROUP SECTION
+            ========================================= -->
+            <section id="list-group" class="showcase__section" data-tab-content="list-group">
+              <h2 class="showcase__section-title">List Group</h2>
+              <p class="showcase__section-description">
+                콘텐츠를 목록 형태로 표시하는 유연한 컴포넌트입니다.
+              </p>
+
+              <!-- Basic List Group -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic List Group</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <ul class="list-group">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                  </ul>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="list-group-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="list-group-basic">&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item"&gt;An item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;A second item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;A third item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;A fourth item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;And a fifth one&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Active Items -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Active and Disabled Items</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <ul class="list-group">
+                    <li class="list-group-item active" aria-current="true">An active item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+                  </ul>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="list-group-active">Copy Code</button>
+                  </div>
+                  <pre><code id="list-group-active">&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item active"&gt;An active item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;A second item&lt;/li&gt;
+  &lt;li class="list-group-item disabled"&gt;A disabled item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Flush List Group -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Flush List Group</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                  </ul>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="list-group-flush">Copy Code</button>
+                  </div>
+                  <pre><code id="list-group-flush">&lt;ul class="list-group list-group-flush"&gt;
+  &lt;li class="list-group-item"&gt;An item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;A second item&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;A third item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Contextual Classes -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Contextual Classes</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <ul class="list-group">
+                    <li class="list-group-item">A simple default list group item</li>
+                    <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+                    <li class="list-group-item list-group-item-success">A simple success list group item</li>
+                    <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+                    <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+                    <li class="list-group-item list-group-item-info">A simple info list group item</li>
+                  </ul>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="list-group-contextual">Copy Code</button>
+                  </div>
+                  <pre><code id="list-group-contextual">&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item"&gt;A simple default list group item&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-primary"&gt;A simple primary list group item&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-success"&gt;A simple success list group item&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-danger"&gt;A simple danger list group item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- With Badges -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>With Badges</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A list item
+                      <span class="badge bg-primary rounded-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A second list item
+                      <span class="badge bg-primary rounded-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A third list item
+                      <span class="badge bg-primary rounded-pill">1</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="list-group-badges">Copy Code</button>
+                  </div>
+                  <pre><code id="list-group-badges">&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+    A list item
+    &lt;span class="badge bg-primary rounded-pill"&gt;14&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+    A second list item
+    &lt;span class="badge bg-primary rounded-pill"&gt;2&lt;/span&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 MODAL SECTION
+            ========================================= -->
+            <section id="modals" class="showcase__section" data-tab-content="modals">
+              <h2 class="showcase__section-title">Modals</h2>
+              <p class="showcase__section-description">
+                페이지 위에 오버레이되는 대화 상자입니다.
+              </p>
+
+              <!-- Basic Modal -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Modal</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Modal body text goes here.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="modal-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="modal-basic">&lt;!-- Button trigger --&gt;
+&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;
+  Launch demo modal
+&lt;/button&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class="modal fade" id="exampleModal" tabindex="-1"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h5 class="modal-title"&gt;Modal title&lt;/h5&gt;
+        &lt;button type="button" class="btn-close" data-bs-dismiss="modal"&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        Modal body text goes here.
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Modal Sizes -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Modal Sizes</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#modalSm">
+                    Small modal
+                  </button>
+                  <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#modalLg">
+                    Large modal
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalXl">
+                    Extra large modal
+                  </button>
+
+                  <div class="modal fade" id="modalSm" tabindex="-1">
+                    <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Small Modal</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">Small modal content</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="modalLg" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Large Modal</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">Large modal content</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="modalXl" tabindex="-1">
+                    <div class="modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Extra Large Modal</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">Extra large modal content</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="modal-sizes">Copy Code</button>
+                  </div>
+                  <pre><code id="modal-sizes">&lt;!-- Small modal --&gt;
+&lt;div class="modal-dialog modal-sm"&gt;...&lt;/div&gt;
+
+&lt;!-- Large modal --&gt;
+&lt;div class="modal-dialog modal-lg"&gt;...&lt;/div&gt;
+
+&lt;!-- Extra large modal --&gt;
+&lt;div class="modal-dialog modal-xl"&gt;...&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Centered Modal -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Vertically Centered Modal</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCentered">
+                    Centered modal
+                  </button>
+
+                  <div class="modal fade" id="modalCentered" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Centered Modal</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                          This modal is vertically centered.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="modal-centered">Copy Code</button>
+                  </div>
+                  <pre><code id="modal-centered">&lt;div class="modal-dialog modal-dialog-centered"&gt;
+  &lt;div class="modal-content"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 NAVBAR SECTION
+            ========================================= -->
+            <section id="navbar" class="showcase__section" data-tab-content="navbar">
+              <h2 class="showcase__section-title">Navbar</h2>
+              <p class="showcase__section-description">
+                반응형 네비게이션 헤더입니다.
+              </p>
+
+              <!-- Basic Navbar -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Navbar</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Navbar</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="navbar-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="navbar-basic">&lt;nav class="navbar navbar-expand-lg bg-light"&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;
+    &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"&gt;
+      &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class="collapse navbar-collapse" id="navbarNav"&gt;
+      &lt;ul class="navbar-nav"&gt;
+        &lt;li class="nav-item"&gt;&lt;a class="nav-link active" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Dark Navbar -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Dark Navbar</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Navbar</a>
+                      <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="navbar-dark">Copy Code</button>
+                  </div>
+                  <pre><code id="navbar-dark">&lt;nav class="navbar navbar-expand-lg navbar-dark bg-dark"&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;
+    &lt;ul class="navbar-nav"&gt;
+      &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 NAVS & TABS SECTION
+            ========================================= -->
+            <section id="navs" class="showcase__section" data-tab-content="navs">
+              <h2 class="showcase__section-title">Navs & Tabs</h2>
+              <p class="showcase__section-description">
+                네비게이션과 탭 컴포넌트입니다.
+              </p>
+
+              <!-- Basic Nav -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Nav</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <ul class="nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link disabled">Disabled</a></li>
+                  </ul>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="nav-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="nav-basic">&lt;ul class="nav"&gt;
+  &lt;li class="nav-item"&gt;&lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="nav-item"&gt;&lt;a class="nav-link disabled"&gt;Disabled&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Tabs -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Tabs</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                  </ul>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="nav-tabs">Copy Code</button>
+                  </div>
+                  <pre><code id="nav-tabs">&lt;ul class="nav nav-tabs"&gt;
+  &lt;li class="nav-item"&gt;&lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Pills -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Pills</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                  </ul>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="nav-pills">Copy Code</button>
+                  </div>
+                  <pre><code id="nav-pills">&lt;ul class="nav nav-pills"&gt;
+  &lt;li class="nav-item"&gt;&lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 OFFCANVAS SECTION
+            ========================================= -->
+            <section id="offcanvas" class="showcase__section" data-tab-content="offcanvas">
+              <h2 class="showcase__section-title">Offcanvas</h2>
+              <p class="showcase__section-description">
+                화면 측면에서 슬라이드되는 사이드바 컴포넌트입니다.
+              </p>
+
+              <!-- Basic Offcanvas -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Offcanvas</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+                    Open Offcanvas
+                  </button>
+
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title">Offcanvas</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div>
+                        Some text as placeholder content.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="offcanvas-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="offcanvas-basic">&lt;button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"&gt;
+  Open Offcanvas
+&lt;/button&gt;
+
+&lt;div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"&gt;
+  &lt;div class="offcanvas-header"&gt;
+    &lt;h5 class="offcanvas-title"&gt;Offcanvas&lt;/h5&gt;
+    &lt;button type="button" class="btn-close" data-bs-dismiss="offcanvas"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="offcanvas-body"&gt;
+    Content here
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 PAGINATION SECTION
+            ========================================= -->
+            <section id="pagination" class="showcase__section" data-tab-content="pagination">
+              <h2 class="showcase__section-title">Pagination</h2>
+              <p class="showcase__section-description">
+                페이지 네비게이션을 위한 페이지네이션 컴포넌트입니다.
+              </p>
+
+              <!-- Basic Pagination -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Pagination</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <nav>
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="pagination-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="pagination-basic">&lt;nav&gt;
+  &lt;ul class="pagination"&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item active"&gt;&lt;a class="page-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Pagination Sizes -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Pagination Sizes</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <nav>
+                    <ul class="pagination pagination-lg mb-3">
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
+                  </nav>
+                  <nav>
+                    <ul class="pagination pagination-sm">
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="pagination-sizes">Copy Code</button>
+                  </div>
+                  <pre><code id="pagination-sizes">&lt;!-- Large --&gt;
+&lt;ul class="pagination pagination-lg"&gt;...&lt;/ul&gt;
+
+&lt;!-- Small --&gt;
+&lt;ul class="pagination pagination-sm"&gt;...&lt;/ul&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 PLACEHOLDERS SECTION
+            ========================================= -->
+            <section id="placeholders" class="showcase__section" data-tab-content="placeholders">
+              <h2 class="showcase__section-title">Placeholders</h2>
+              <p class="showcase__section-description">
+                로딩 중 콘텐츠를 표시하는 스켈레톤 로더입니다. HTML과 CSS만으로 구성되며, 사용자에게 로딩 상태를 시각적으로 표현합니다.
+              </p>
+
+              <!-- Card Placeholder Example -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Card with Placeholder</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="card">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='180'%3E%3Crect width='100%25' height='100%25' fill='%23868e96'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='26px' fill='%23dee2e6'%3EImage%3C/text%3E%3C/svg%3E" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card" aria-hidden="true">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='180'%3E%3Crect width='100%25' height='100%25' fill='%23868e96'/%3E%3C/svg%3E" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6"></span>
+                          </h5>
+                          <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-6"></span>
+                            <span class="placeholder col-8"></span>
+                          </p>
+                          <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="placeholder-card">Copy Code</button>
+                  </div>
+                  <pre><code id="placeholder-card">&lt;div class="card" aria-hidden="true"&gt;
+  &lt;img src="..." class="card-img-top" alt="..."&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title placeholder-glow"&gt;
+      &lt;span class="placeholder col-6"&gt;&lt;/span&gt;
+    &lt;/h5&gt;
+    &lt;p class="card-text placeholder-glow"&gt;
+      &lt;span class="placeholder col-7"&gt;&lt;/span&gt;
+      &lt;span class="placeholder col-4"&gt;&lt;/span&gt;
+      &lt;span class="placeholder col-4"&gt;&lt;/span&gt;
+      &lt;span class="placeholder col-6"&gt;&lt;/span&gt;
+      &lt;span class="placeholder col-8"&gt;&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Width Control -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Width Control</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <span class="placeholder col-6"></span>
+                  <span class="placeholder w-75"></span>
+                  <span class="placeholder" style="width: 25%;"></span>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="placeholder-width">Copy Code</button>
+                  </div>
+                  <pre><code id="placeholder-width">&lt;!-- Grid column class --&gt;
+&lt;span class="placeholder col-6"&gt;&lt;/span&gt;
+
+&lt;!-- Width utility --&gt;
+&lt;span class="placeholder w-75"&gt;&lt;/span&gt;
+
+&lt;!-- Inline style --&gt;
+&lt;span class="placeholder" style="width: 25%;"&gt;&lt;/span&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Color Variations -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Color Variations</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="d-flex flex-column gap-2">
+                    <span class="placeholder col-12"></span>
+                    <span class="placeholder col-12 bg-primary"></span>
+                    <span class="placeholder col-12 bg-secondary"></span>
+                    <span class="placeholder col-12 bg-success"></span>
+                    <span class="placeholder col-12 bg-danger"></span>
+                    <span class="placeholder col-12 bg-warning"></span>
+                    <span class="placeholder col-12 bg-info"></span>
+                    <span class="placeholder col-12 bg-light"></span>
+                    <span class="placeholder col-12 bg-dark"></span>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="placeholder-color">Copy Code</button>
+                  </div>
+                  <pre><code id="placeholder-color">&lt;span class="placeholder col-12"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-primary"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-secondary"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-success"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-danger"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-warning"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-info"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-light"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 bg-dark"&gt;&lt;/span&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Sizing -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Sizing</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="d-flex flex-column gap-2">
+                    <span class="placeholder col-12 placeholder-lg"></span>
+                    <span class="placeholder col-12"></span>
+                    <span class="placeholder col-12 placeholder-sm"></span>
+                    <span class="placeholder col-12 placeholder-xs"></span>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="placeholder-sizing">Copy Code</button>
+                  </div>
+                  <pre><code id="placeholder-sizing">&lt;span class="placeholder col-12 placeholder-lg"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 placeholder-sm"&gt;&lt;/span&gt;
+&lt;span class="placeholder col-12 placeholder-xs"&gt;&lt;/span&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Animation: Glow -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Animation - Glow</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <p class="placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                  </p>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="placeholder-glow">Copy Code</button>
+                  </div>
+                  <pre><code id="placeholder-glow">&lt;p class="placeholder-glow"&gt;
+  &lt;span class="placeholder col-12"&gt;&lt;/span&gt;
+&lt;/p&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Animation: Wave -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Animation - Wave</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <p class="placeholder-wave">
+                    <span class="placeholder col-12"></span>
+                  </p>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="placeholder-wave">Copy Code</button>
+                  </div>
+                  <pre><code id="placeholder-wave">&lt;p class="placeholder-wave"&gt;
+  &lt;span class="placeholder col-12"&gt;&lt;/span&gt;
+&lt;/p&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 POPOVERS SECTION
+            ========================================= -->
+            <section id="popovers" class="showcase__section" data-tab-content="popovers">
+              <h2 class="showcase__section-title">Popovers</h2>
+              <p class="showcase__section-description">
+                클릭 시 추가 정보를 표시하는 팝오버입니다.
+              </p>
+
+              <!-- Basic Popovers -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Popovers</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button type="button" class="btn btn-secondary me-2" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                    Click to toggle popover
+                  </button>
+                  <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                    Popover on top
+                  </button>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="popover-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="popover-basic">&lt;button type="button" class="btn btn-secondary"
+  data-bs-toggle="popover"
+  data-bs-title="Popover title"
+  data-bs-content="Popover content"&gt;
+  Click to toggle popover
+&lt;/button&gt;
+
+&lt;!-- Initialize with JavaScript --&gt;
+&lt;script&gt;
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(el =&gt; new bootstrap.Popover(el))
+&lt;/script&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 PROGRESS SECTION
+            ========================================= -->
+            <section id="progress" class="showcase__section" data-tab-content="progress">
+              <h2 class="showcase__section-title">Progress</h2>
+              <p class="showcase__section-description">
+                진행 상태를 표시하는 프로그레스 바입니다.
+              </p>
+
+              <!-- Basic Progress -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Progress</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+                  </div>
+                  <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 50%"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="progress-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="progress-basic">&lt;div class="progress"&gt;
+  &lt;div class="progress-bar" role="progressbar" style="width: 25%"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Colored Progress -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Colored Progress Bars</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width: 25%"></div>
+                  </div>
+                  <div class="progress mb-3">
+                    <div class="progress-bar bg-info" style="width: 50%"></div>
+                  </div>
+                  <div class="progress mb-3">
+                    <div class="progress-bar bg-warning" style="width: 75%"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" style="width: 100%"></div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="progress-colored">Copy Code</button>
+                  </div>
+                  <pre><code id="progress-colored">&lt;div class="progress"&gt;
+  &lt;div class="progress-bar bg-success" style="width: 25%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar bg-info" style="width: 50%"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 SCROLLSPY SECTION
+            ========================================= -->
+            <section id="scrollspy" class="showcase__section" data-tab-content="scrollspy">
+              <h2 class="showcase__section-title">Scrollspy</h2>
+              <p class="showcase__section-description">
+                스크롤 위치에 따라 네비게이션을 자동으로 업데이트합니다.
+              </p>
+
+              <!-- Navbar Scrollspy -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Navbar Scrollspy</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <nav id="navbar-scrollspy-1" class="navbar navbar-expand-lg navbar-light bg-light px-3">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Navbar</a>
+                      <nav class="nav nav-pills">
+                        <a class="nav-link" href="#scrollspy-1">First heading</a>
+                        <a class="nav-link" href="#scrollspy-2">Second heading</a>
+                        <a class="nav-link" href="#scrollspy-3">Third heading</a>
+                      </nav>
+                    </div>
+                  </nav>
+                  <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy-1" data-bs-root-margin="0px 0px -40%" class="scrollspy-example p-3 rounded-2 border" tabindex="0" style="height: 350px; overflow-y: auto; margin-top: 1rem;">
+                    <h4 id="scrollspy-1">First heading</h4>
+                    <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+                    <p>Bootstrap의 Scrollspy는 스크롤 위치를 기반으로 네비게이션 링크를 자동으로 업데이트하는 강력한 기능입니다. 사용자가 페이지를 아래로 스크롤하면 현재 뷰포트에 있는 섹션에 해당하는 네비게이션 링크가 자동으로 활성화됩니다.</p>
+                    <p>이 기능은 긴 문서나 단일 페이지 애플리케이션에서 특히 유용합니다. 사용자는 현재 어느 섹션을 보고 있는지 쉽게 파악할 수 있으며, 네비게이션을 클릭하여 원하는 섹션으로 빠르게 이동할 수 있습니다.</p>
+                    <h4 id="scrollspy-2">Second heading</h4>
+                    <p>두 번째 섹션입니다. Scrollspy는 data 속성을 사용하여 쉽게 설정할 수 있습니다. data-bs-spy="scroll" 속성을 스크롤 가능한 요소에 추가하고, data-bs-target 속성으로 네비게이션 요소를 지정하면 됩니다.</p>
+                    <p>추가적으로 data-bs-root-margin 속성을 사용하여 활성화 시점을 조절할 수 있습니다. 이는 CSS의 root margin과 유사하게 동작하며, 요소가 뷰포트에 들어오는 시점을 정의합니다.</p>
+                    <p>Scrollspy는 네비게이션 바, 사이드바, 목차 등 다양한 UI 패턴에 적용할 수 있습니다. Bootstrap의 nav, list-group, 또는 간단한 링크 목록과 함께 사용할 수 있습니다.</p>
+                    <p>이 컴포넌트는 접근성을 고려하여 설계되었으며, 키보드 네비게이션과 스크린 리더를 지원합니다.</p>
+                    <h4 id="scrollspy-3">Third heading</h4>
+                    <p>세 번째 섹션입니다. Scrollspy를 사용할 때는 각 섹션에 고유한 ID를 부여해야 합니다. 네비게이션 링크의 href 속성은 이 ID와 일치해야 하며, 이를 통해 Bootstrap이 자동으로 스크롤 위치를 추적하고 링크를 업데이트합니다.</p>
+                    <p>스크롤 컨테이너는 반드시 overflow-y: auto 또는 overflow-y: scroll 속성을 가져야 하며, 명시적인 높이가 설정되어 있어야 합니다. 또한 tabindex="0" 속성을 추가하여 키보드로 접근 가능하도록 만드는 것이 좋습니다.</p>
+                    <p>Scrollspy는 중첩된 네비게이션도 지원합니다. 부모 항목과 자식 항목이 있는 계층적 네비게이션 구조에서도 올바르게 작동합니다.</p>
+                    <p>JavaScript API를 통해 프로그래밍 방식으로 Scrollspy를 제어할 수도 있습니다. new bootstrap.ScrollSpy() 생성자를 사용하여 인스턴스를 만들고, refresh() 메서드로 업데이트할 수 있습니다.</p>
+                    <p>이 예제에서 네비게이션 링크를 클릭하면 해당 섹션으로 부드럽게 스크롤되며, 전체 페이지가 아닌 컨테이너 내부만 스크롤됩니다.</p>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="scrollspy-navbar">Copy Code</button>
+                  </div>
+                  <pre><code id="scrollspy-navbar">&lt;nav id="navbar-example" class="navbar navbar-expand-lg navbar-light bg-light"&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;
+    &lt;nav class="nav nav-pills"&gt;
+      &lt;a class="nav-link" href="#scrollspy-1"&gt;First&lt;/a&gt;
+      &lt;a class="nav-link" href="#scrollspy-2"&gt;Second&lt;/a&gt;
+      &lt;a class="nav-link" href="#scrollspy-3"&gt;Third&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+&lt;div data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-root-margin="0px 0px -40%" style="height: 350px; overflow-y: auto;" tabindex="0"&gt;
+  &lt;h4 id="scrollspy-1"&gt;First heading&lt;/h4&gt;
+  &lt;p&gt;...&lt;/p&gt;
+  &lt;h4 id="scrollspy-2"&gt;Second heading&lt;/h4&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Nested Nav Scrollspy -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Nested Nav</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="row">
+                    <div class="col-4">
+                      <nav id="navbar-scrollspy-nested" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+                        <nav class="nav nav-pills flex-column">
+                          <a class="nav-link" href="#item-1">Item 1</a>
+                          <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                          </nav>
+                          <a class="nav-link" href="#item-2">Item 2</a>
+                          <a class="nav-link" href="#item-3">Item 3</a>
+                          <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                          </nav>
+                        </nav>
+                      </nav>
+                    </div>
+                    <div class="col-8">
+                      <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy-nested" data-bs-root-margin="0px 0px -40%" class="scrollspy-example-2 p-3 rounded-2 border" tabindex="0" style="height: 300px; overflow-y: auto;">
+                        <h4 id="item-1">Item 1</h4>
+                        <p>중첩된 네비게이션을 사용한 Scrollspy 예제입니다. 이 구조는 문서의 계층적 구조를 반영하며, 부모 항목과 자식 항목 간의 관계를 명확하게 표현합니다.</p>
+                        <p>메인 섹션 아래에 여러 하위 섹션이 있는 경우, 이러한 중첩 구조를 사용하면 사용자가 문서의 구조를 한눈에 파악할 수 있습니다.</p>
+                        <h5 id="item-1-1">Item 1-1</h5>
+                        <p>첫 번째 항목의 첫 번째 하위 섹션입니다. Scrollspy는 현재 스크롤 위치에 따라 부모 항목과 자식 항목을 모두 올바르게 하이라이트합니다.</p>
+                        <p>중첩된 네비게이션에서는 Bootstrap의 nav-pills 클래스와 flex-column을 사용하여 세로 레이아웃을 구현합니다. ms-3 클래스로 하위 항목에 들여쓰기를 적용할 수 있습니다.</p>
+                        <h5 id="item-1-2">Item 1-2</h5>
+                        <p>첫 번째 항목의 두 번째 하위 섹션입니다. 각 하위 섹션은 독립적으로 추적되며, 사용자가 해당 섹션을 볼 때 자동으로 활성화됩니다.</p>
+                        <p>이러한 구조는 API 문서, 사용자 가이드, 기술 문서 등에서 특히 유용합니다.</p>
+                        <h4 id="item-2">Item 2</h4>
+                        <p>두 번째 메인 항목입니다. 이 항목에는 하위 섹션이 없으므로 단독으로 표시됩니다.</p>
+                        <p>Scrollspy는 복잡한 계층 구조를 처리할 수 있으며, 여러 레벨의 중첩을 지원합니다. 3단계, 4단계 이상의 중첩도 가능합니다.</p>
+                        <p>네비게이션 구조를 설계할 때는 사용자 경험을 고려하여 너무 깊은 중첩은 피하는 것이 좋습니다.</p>
+                        <h4 id="item-3">Item 3</h4>
+                        <p>세 번째 메인 항목입니다. 이 항목도 하위 섹션을 포함하고 있습니다.</p>
+                        <p>중첩된 Scrollspy를 구현할 때는 각 레벨의 ID 명명 규칙을 일관되게 유지하는 것이 중요합니다.</p>
+                        <h5 id="item-3-1">Item 3-1</h5>
+                        <p>세 번째 항목의 첫 번째 하위 섹션입니다. Bootstrap의 Scrollspy는 자동으로 부모-자식 관계를 인식하고 적절하게 활성화 상태를 관리합니다.</p>
+                        <p>네비게이션 링크를 클릭하면 해당 섹션으로 부드럽게 스크롤되며, 전체 페이지가 아닌 스크롤 컨테이너 내부만 이동합니다.</p>
+                        <h5 id="item-3-2">Item 3-2</h5>
+                        <p>세 번째 항목의 두 번째 하위 섹션입니다. 이것으로 중첩된 네비게이션 예제가 완료됩니다.</p>
+                        <p>실제 프로젝트에서는 이 패턴을 확장하여 더 많은 섹션과 하위 섹션을 추가할 수 있습니다. Scrollspy는 동적으로 추가되는 콘텐츠도 지원하며, refresh() 메서드로 업데이트할 수 있습니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="scrollspy-nested">Copy Code</button>
+                  </div>
+                  <pre><code id="scrollspy-nested">&lt;nav id="navbar-example" class="navbar navbar-light bg-light"&gt;
+  &lt;nav class="nav nav-pills flex-column"&gt;
+    &lt;a class="nav-link" href="#item-1"&gt;Item 1&lt;/a&gt;
+    &lt;nav class="nav nav-pills flex-column"&gt;
+      &lt;a class="nav-link ms-3" href="#item-1-1"&gt;Item 1-1&lt;/a&gt;
+      &lt;a class="nav-link ms-3" href="#item-1-2"&gt;Item 1-2&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;a class="nav-link" href="#item-2"&gt;Item 2&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/nav&gt;
+&lt;div data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-root-margin="0px 0px -40%" style="height: 300px; overflow-y: auto;" tabindex="0"&gt;
+  &lt;h4 id="item-1"&gt;Item 1&lt;/h4&gt;
+  &lt;p&gt;...&lt;/p&gt;
+  &lt;h5 id="item-1-1"&gt;Item 1-1&lt;/h5&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- List Group Scrollspy -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>List Group Scrollspy</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="row">
+                    <div class="col-4">
+                      <div id="list-scrollspy" class="list-group">
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div data-bs-spy="scroll" data-bs-target="#list-scrollspy" data-bs-root-margin="0px 0px -40%" class="scrollspy-example-3 p-3 rounded-2 border" tabindex="0" style="height: 300px; overflow-y: auto;">
+                        <h4 id="list-item-1">Item 1</h4>
+                        <p>List Group을 사용한 Scrollspy 예제입니다. List Group은 Bootstrap의 강력한 컴포넌트로, 링크나 버튼의 목록을 깔끔하게 표시할 수 있습니다.</p>
+                        <p>Scrollspy와 함께 사용하면 사이드바 네비게이션이나 목차를 만들기에 완벽합니다. list-group-item-action 클래스를 사용하면 호버 효과와 클릭 가능한 상태를 제공합니다.</p>
+                        <p>현재 활성화된 항목은 자동으로 하이라이트되며, Bootstrap의 기본 스타일이 적용됩니다.</p>
+                        <h4 id="list-item-2">Item 2</h4>
+                        <p>두 번째 항목입니다. List Group Scrollspy는 특히 사이드바가 있는 문서 레이아웃에 적합합니다.</p>
+                        <p>각 항목은 고유한 ID를 가지며, 네비게이션 링크의 href 속성이 이 ID를 참조합니다. Bootstrap의 Scrollspy JavaScript가 스크롤 위치를 모니터링하고 적절한 항목을 활성화합니다.</p>
+                        <p>List Group은 다양한 스타일 옵션을 제공합니다. 기본, flush, horizontal 레이아웃 등을 선택할 수 있으며, contextual 클래스로 색상을 변경할 수도 있습니다.</p>
+                        <p>이 컴포넌트는 반응형으로 설계되어 모바일 기기에서도 잘 작동합니다.</p>
+                        <h4 id="list-item-3">Item 3</h4>
+                        <p>세 번째 항목입니다. Scrollspy는 페이지가 로드될 때 자동으로 초기화되며, 추가 JavaScript 코드 없이 data 속성만으로 작동합니다.</p>
+                        <p>동적으로 콘텐츠가 추가되거나 제거되는 경우, JavaScript API를 사용하여 Scrollspy를 새로고침할 수 있습니다. 이는 싱글 페이지 애플리케이션에서 특히 유용합니다.</p>
+                        <p>List Group의 각 항목은 배지, 아이콘, 또는 추가 텍스트로 커스터마이즈할 수 있습니다. 이를 통해 더 풍부한 네비게이션 경험을 제공할 수 있습니다.</p>
+                        <p>접근성 측면에서 List Group은 시맨틱 HTML을 사용하며, 스크린 리더와 키보드 네비게이션을 지원합니다.</p>
+                        <h4 id="list-item-4">Item 4</h4>
+                        <p>네 번째 항목입니다. 이것으로 List Group Scrollspy 예제가 완료됩니다.</p>
+                        <p>실제 프로젝트에서는 이 패턴을 확장하여 더 많은 항목을 추가할 수 있습니다. 긴 문서의 경우 수십 개의 섹션도 문제없이 처리할 수 있습니다.</p>
+                        <p>Scrollspy의 성능은 매우 우수하며, 복잡한 문서 구조에서도 부드럽게 작동합니다. Intersection Observer API를 기반으로 구현되어 있어 효율적입니다.</p>
+                        <p>네비게이션 링크를 클릭하면 해당 섹션으로 스크롤되며, 스크롤 애니메이션은 smooth behavior로 부드럽게 진행됩니다.</p>
+                        <p>이 예제는 Bootstrap 5.3의 최신 기능을 사용하며, 모든 주요 브라우저에서 호환됩니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="scrollspy-listgroup">Copy Code</button>
+                  </div>
+                  <pre><code id="scrollspy-listgroup">&lt;div id="list-example" class="list-group"&gt;
+  &lt;a class="list-group-item list-group-item-action" href="#list-item-1"&gt;Item 1&lt;/a&gt;
+  &lt;a class="list-group-item list-group-item-action" href="#list-item-2"&gt;Item 2&lt;/a&gt;
+  &lt;a class="list-group-item list-group-item-action" href="#list-item-3"&gt;Item 3&lt;/a&gt;
+  &lt;a class="list-group-item list-group-item-action" href="#list-item-4"&gt;Item 4&lt;/a&gt;
+&lt;/div&gt;
+&lt;div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-root-margin="0px 0px -40%" style="height: 300px; overflow-y: auto;" tabindex="0"&gt;
+  &lt;h4 id="list-item-1"&gt;Item 1&lt;/h4&gt;
+  &lt;p&gt;...&lt;/p&gt;
+  &lt;h4 id="list-item-2"&gt;Item 2&lt;/h4&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Simple Anchors -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Simple Anchors</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="row">
+                    <div class="col-4">
+                      <div id="simple-list" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
+                        <a class="p-1 rounded" href="#simple-list-item-1">Item 1</a>
+                        <a class="p-1 rounded" href="#simple-list-item-2">Item 2</a>
+                        <a class="p-1 rounded" href="#simple-list-item-3">Item 3</a>
+                        <a class="p-1 rounded" href="#simple-list-item-4">Item 4</a>
+                        <a class="p-1 rounded" href="#simple-list-item-5">Item 5</a>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div data-bs-spy="scroll" data-bs-target="#simple-list" data-bs-root-margin="0px 0px -40%" class="scrollspy-example-4 p-3 rounded-2 border" tabindex="0" style="height: 300px; overflow-y: auto;">
+                        <h4 id="simple-list-item-1">Item 1</h4>
+                        <p>간단한 앵커 링크를 사용한 Scrollspy 예제입니다. 이 방법은 최소한의 마크업으로 Scrollspy를 구현할 수 있습니다.</p>
+                        <p>Bootstrap의 nav나 list-group 컴포넌트를 사용하지 않고도, 일반 앵커 링크만으로 Scrollspy를 구현할 수 있습니다. 커스텀 스타일을 적용하기에 유연한 구조입니다.</p>
+                        <p>d-flex와 flex-column 유틸리티 클래스를 사용하여 세로 레이아웃을 만들고, gap-2로 간격을 조절했습니다.</p>
+                        <h4 id="simple-list-item-2">Item 2</h4>
+                        <p>두 번째 항목입니다. 각 링크는 p-1과 rounded 클래스로 기본 스타일이 적용되어 있습니다.</p>
+                        <p>SCSS에서 정의한 커스텀 스타일이 적용되어, 호버 시 배경색이 변하고 활성 상태에서는 primary 색상으로 표시됩니다.</p>
+                        <p>이러한 간단한 구조는 미니멀한 디자인이나 사이드바가 필요 없는 경우에 적합합니다.</p>
+                        <p>커스터마이징이 쉬워서 프로젝트의 디자인 시스템에 맞게 조정할 수 있습니다.</p>
+                        <h4 id="simple-list-item-3">Item 3</h4>
+                        <p>세 번째 항목입니다. Scrollspy는 매우 유연한 컴포넌트로, 거의 모든 형태의 네비게이션 구조와 함께 작동합니다.</p>
+                        <p>중요한 것은 data-bs-spy="scroll" 속성이 있는 스크롤 컨테이너와 data-bs-target 속성으로 연결된 네비게이션 요소입니다.</p>
+                        <p>네비게이션의 각 링크는 href 속성으로 콘텐츠의 ID를 참조하면 됩니다. Bootstrap이 나머지를 자동으로 처리합니다.</p>
+                        <p>이 예제는 5개의 항목을 포함하고 있어, 스크롤 동작을 명확하게 확인할 수 있습니다.</p>
+                        <h4 id="simple-list-item-4">Item 4</h4>
+                        <p>네 번째 항목입니다. Scrollspy의 data-bs-root-margin 속성을 사용하여 활성화 임계값을 조정할 수 있습니다.</p>
+                        <p>예를 들어 "0px 0px -40%"는 요소가 뷰포트의 하단 40% 지점에 도달했을 때 활성화됨을 의미합니다.</p>
+                        <p>이 설정을 조정하여 사용자 경험을 최적화할 수 있습니다. 일반적으로 -40%에서 -10% 사이의 값이 적절합니다.</p>
+                        <p>tabindex="0" 속성은 키보드로 스크롤 컨테이너에 포커스를 맞출 수 있게 하여 접근성을 향상시킵니다.</p>
+                        <h4 id="simple-list-item-5">Item 5</h4>
+                        <p>다섯 번째이자 마지막 항목입니다. 이것으로 Simple Anchors Scrollspy 예제가 완료됩니다.</p>
+                        <p>Scrollspy는 단일 페이지 웹사이트, 제품 랜딩 페이지, 문서 사이트 등에서 널리 사용되는 패턴입니다.</p>
+                        <p>사용자가 현재 어느 섹션을 보고 있는지 시각적 피드백을 제공하여 전체적인 사용자 경험을 개선합니다.</p>
+                        <p>모든 Scrollspy 예제에서 네비게이션 링크를 클릭하면 해당 섹션으로 스크롤되며, 전체 페이지가 아닌 컨테이너 내부만 이동합니다.</p>
+                        <p>Bootstrap 5.3의 Scrollspy는 안정적이고 성능이 우수하며, 다양한 사용 사례를 지원합니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="scrollspy-simple">Copy Code</button>
+                  </div>
+                  <pre><code id="scrollspy-simple">&lt;div id="simple-list" class="d-flex flex-column gap-2"&gt;
+  &lt;a class="p-1 rounded" href="#simple-list-item-1"&gt;Item 1&lt;/a&gt;
+  &lt;a class="p-1 rounded" href="#simple-list-item-2"&gt;Item 2&lt;/a&gt;
+  &lt;a class="p-1 rounded" href="#simple-list-item-3"&gt;Item 3&lt;/a&gt;
+&lt;/div&gt;
+&lt;div data-bs-spy="scroll" data-bs-target="#simple-list" data-bs-root-margin="0px 0px -40%" style="height: 300px; overflow-y: auto;" tabindex="0"&gt;
+  &lt;h4 id="simple-list-item-1"&gt;Item 1&lt;/h4&gt;
+  &lt;p&gt;...&lt;/p&gt;
+  &lt;h4 id="simple-list-item-2"&gt;Item 2&lt;/h4&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 SPINNERS SECTION
+            ========================================= -->
+            <section id="spinners" class="showcase__section" data-tab-content="spinners">
+              <h2 class="showcase__section-title">Spinners</h2>
+              <p class="showcase__section-description">
+                로딩 상태를 표시하는 스피너입니다.
+              </p>
+
+              <!-- Border Spinners -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Border Spinners</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="spinner-border text-primary me-2" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-secondary me-2" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-success me-2" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-danger me-2" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="spinner-border">Copy Code</button>
+                  </div>
+                  <pre><code id="spinner-border">&lt;div class="spinner-border" role="status"&gt;
+  &lt;span class="visually-hidden"&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Growing Spinners -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Growing Spinners</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="spinner-grow text-primary me-2" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-secondary me-2" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-success me-2" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-danger me-2" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="spinner-grow">Copy Code</button>
+                  </div>
+                  <pre><code id="spinner-grow">&lt;div class="spinner-grow" role="status"&gt;
+  &lt;span class="visually-hidden"&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 TOASTS SECTION
+            ========================================= -->
+            <section id="toasts" class="showcase__section" data-tab-content="toasts">
+              <h2 class="showcase__section-title">Toasts</h2>
+              <p class="showcase__section-description">
+                가벼운 알림 메시지를 표시하는 토스트입니다.
+              </p>
+
+              <!-- Basic Toast -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Toast</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="toast show" role="alert">
+                    <div class="toast-header">
+                      <strong class="me-auto">Bootstrap</strong>
+                      <small>11 mins ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                    </div>
+                    <div class="toast-body">
+                      Hello, world! This is a toast message.
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="toast-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="toast-basic">&lt;div class="toast" role="alert"&gt;
+  &lt;div class="toast-header"&gt;
+    &lt;strong class="me-auto"&gt;Bootstrap&lt;/strong&gt;
+    &lt;small&gt;11 mins ago&lt;/small&gt;
+    &lt;button type="button" class="btn-close" data-bs-dismiss="toast"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="toast-body"&gt;
+    Hello, world! This is a toast message.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Color Schemes -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Color Schemes</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div class="toast show align-items-center text-bg-primary border-0 mb-2" role="alert">
+                    <div class="d-flex">
+                      <div class="toast-body">
+                        Hello, world! This is a primary toast message.
+                      </div>
+                      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                    </div>
+                  </div>
+                  <div class="toast show align-items-center text-bg-success border-0" role="alert">
+                    <div class="d-flex">
+                      <div class="toast-body">
+                        Hello, world! This is a success toast message.
+                      </div>
+                      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="toast-colors">Copy Code</button>
+                  </div>
+                  <pre><code id="toast-colors">&lt;div class="toast align-items-center text-bg-primary border-0" role="alert"&gt;
+  &lt;div class="d-flex"&gt;
+    &lt;div class="toast-body"&gt;
+      Primary toast message.
+    &lt;/div&gt;
+    &lt;button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 TOOLTIPS SECTION
+            ========================================= -->
+            <section id="tooltips" class="showcase__section" data-tab-content="tooltips">
+              <h2 class="showcase__section-title">Tooltips</h2>
+              <p class="showcase__section-description">
+                마우스 호버 시 간단한 정보를 표시하는 툴팁입니다.
+              </p>
+
+              <!-- Basic Tooltips -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>Basic Tooltips</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <button type="button" class="btn btn-secondary me-2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                    Tooltip on top
+                  </button>
+                  <button type="button" class="btn btn-secondary me-2" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+                    Tooltip on right
+                  </button>
+                  <button type="button" class="btn btn-secondary me-2" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+                    Tooltip on bottom
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left">
+                    Tooltip on left
+                  </button>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="tooltip-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="tooltip-basic">&lt;button type="button" class="btn btn-secondary"
+  data-bs-toggle="tooltip"
+  data-bs-placement="top"
+  data-bs-title="Tooltip text"&gt;
+  Tooltip on top
+&lt;/button&gt;
+
+&lt;!-- Initialize with JavaScript --&gt;
+&lt;script&gt;
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(el =&gt; new bootstrap.Tooltip(el))
+&lt;/script&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- ========================================
+                 TABLES SECTION (Tabulator)
+            ========================================= -->
+            <section id="tables" class="showcase__section" data-tab-content="tables">
+              <h2 class="showcase__section-title">Tables (Tabulator)</h2>
+              <p class="showcase__section-description">
+                Tabulator 라이브러리를 사용한 고급 테이블 - 검색, 정렬, 페이지네이션 기능 제공 (Vanilla JS, jQuery 불필요!)
+              </p>
+
+              <!-- Basic Board Table -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>게시판 스타일 테이블</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div id="boardTable"></div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="table-basic">Copy Code</button>
+                  </div>
+                  <pre><code id="table-basic">&lt;!-- HTML --&gt;
+&lt;div id="boardTable"&gt;&lt;/div&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script&gt;
+const boardData = [
+  { id: 15, title: 'Bootstrap Table 사용법', author: '관리자', date: '2025-01-15', views: 245 },
+  { id: 14, title: '공지사항입니다', author: '운영자', date: '2025-01-14', views: 189 },
+  // ... more data
+];
+
+new Tabulator("#boardTable", {
+  data: boardData,
+  layout: "fitColumns",
+  pagination: true,
+  paginationSize: 10,
+  paginationSizeSelector: [10, 20, 50],
+  columns: [
+    { title: "번호", field: "id", sorter: "number", width: 80 },
+    { title: "제목", field: "title", sorter: "string" },
+    { title: "작성자", field: "author", sorter: "string", width: 120 },
+    { title: "작성일", field: "date", sorter: "date", width: 120 },
+    { title: "조회", field: "views", sorter: "number", width: 80 }
+  ]
+});
+&lt;/script&gt;</code></pre>
+                </div>
+              </div>
+
+              <!-- Compact Table -->
+              <div class="showcase__item">
+                <div class="showcase__item-header">
+                  <h4>컴팩트 테이블</h4>
+                </div>
+                <div class="showcase__item-preview">
+                  <div id="compactTable"></div>
+                </div>
+                <div class="showcase__item-code">
+                  <div class="showcase__item-actions">
+                    <button class="btn-copy" data-copy="table-compact">Copy Code</button>
+                  </div>
+                  <pre><code id="table-compact">&lt;div id="compactTable"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+const compactData = [
+  { no: 1, name: '홍길동', email: 'hong@example.com', status: '활성' },
+  { no: 2, name: '김철수', email: 'kim@example.com', status: '활성' },
+  // ... more data
+];
+
+new Tabulator("#compactTable", {
+  data: compactData,
+  layout: "fitColumns",
+  pagination: true,
+  paginationSize: 5,
+  columns: [
+    { title: "No", field: "no", sorter: "number", width: 80 },
+    { title: "이름", field: "name", sorter: "string", width: 120 },
+    { title: "이메일", field: "email", sorter: "string" },
+    { title: "상태", field: "status", sorter: "string", width: 100 }
+  ]
+});
+&lt;/script&gt;</code></pre>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- More sections will be added here -->
+            <div class="alert alert-info mt-5" role="alert">
+              <strong>작업 중...</strong> 추가 컴포넌트는 계속 업데이트됩니다!
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__content">
+      <div class="footer__section">
+        <h3 class="footer__section-title">About</h3>
+        <p>Bootstrap Component Showcase - 개발자를 위한 컴포넌트 라이브러리</p>
+      </div>
+
+      <div class="footer__section">
+        <h3 class="footer__section-title">Quick Links</h3>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#buttons" class="footer__link">Buttons</a></li>
+          <li class="footer__item"><a href="#alerts" class="footer__link">Alerts</a></li>
+          <li class="footer__item"><a href="#cards" class="footer__link">Cards</a></li>
+          <li class="footer__item"><a href="#forms" class="footer__link">Forms</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__section">
+        <h3 class="footer__section-title">Resources</h3>
+        <div class="footer__social">
+          <a href="https://getbootstrap.com" target="_blank" class="footer__link">Bootstrap Docs</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 Bootstrap Component Showcase. Built with Bootstrap 5.3.8</p>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script type="module" src="/assets/js/main.js"></script>
+  <script type="module" src="/assets/js/showcase.js"></script>
+</body>
+</html>

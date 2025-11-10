@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   root: 'src',
-  base: '/S2B_PJT/',
+  base: command === 'build' ? '/S2B_PJT/' : '/',
   publicDir: '../public',
 
   server: {
@@ -35,4 +35,4 @@ export default defineConfig({
       }
     }
   }
-});
+}));

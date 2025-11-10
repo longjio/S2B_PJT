@@ -25,8 +25,12 @@ class ComponentLoader {
       return this.loadingPromises.get(componentName);
     }
 
+    // base path 고려 (import.meta.env.BASE_URL 사용)
+    const basePath = import.meta.env.BASE_URL || '/';
+    const componentPath = `${basePath}components/${componentName}.html`;
+
     // 새로운 로딩 Promise 생성
-    const loadPromise = fetch(`/components/${componentName}.html`)
+    const loadPromise = fetch(componentPath)
       .then(response => {
         if (!response.ok) {
           throw new Error(`Failed to load component: ${componentName}`);
